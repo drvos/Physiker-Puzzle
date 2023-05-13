@@ -56,6 +56,7 @@
                     <navigationItem key="navigationItem" title="tre fysiker katte" id="RjF-n7-6gP"/>
                     <connections>
                         <outlet property="puzzleView" destination="Ndz-XQ-0EU" id="aYv-gp-vOs"/>
+                        <segue destination="vPF-mn-DqS" kind="show" identifier="configurationSegue" id="fy7-v1-I7q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -137,6 +138,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yAy-aR-pQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="498" y="-823"/>
+        </scene>
+        <!--Einstellungen-->
+        <scene sceneID="ooJ-RA-5l4">
+            <objects>
+                <viewController id="vPF-mn-DqS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oiK-hB-56T">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="VGl-3n-Ntd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Einstellungen" id="hLk-kZ-yms">
+                        <barButtonItem key="backBarButtonItem" title="Zurück" id="j3x-Vt-2at"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9OA-n2-DMS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="-353"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cw3-Cu-JFn">

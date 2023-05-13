@@ -12,6 +12,7 @@ class ViewController: UIViewController, PuzzleDelegate {
    @IBOutlet weak var puzzleView: SlidingPuzzleView!
    
    var gameInfoVC: GameInfoTableViewController!
+   var configVC: ConfigurationViewController!
    
    var timer: Timer?
    var duration: Duration?
@@ -19,6 +20,10 @@ class ViewController: UIViewController, PuzzleDelegate {
    
    override func viewDidLoad() {
       super.viewDidLoad()
+      
+      navigationItem.rightBarButtonItem =
+      UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain,
+                      target: self, action: #selector(prefsTapped))
       
       puzzleView.level = .veryEasy
       
@@ -31,9 +36,15 @@ class ViewController: UIViewController, PuzzleDelegate {
    }
    
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      if (segue.identifier == "gameInfoSegue") {
+      if (segue.destination .isKind(of: ConfigurationViewController.self)) {
+         configVC = segue.destination as? ConfigurationViewController
+      } else if (segue.destination .isKind(of: GameInfoTableViewController.self)) {
          gameInfoVC = segue.destination as? GameInfoTableViewController
       }
+   }
+   
+   @objc func prefsTapped() {
+      self.performSegue(withIdentifier: "configurationSegue", sender: self)
    }
    
    // MARK: - PuzzleDelegate

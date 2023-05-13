@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C2C323B2A0FA21200D09109 /* GameInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C323A2A0FA21200D09109 /* GameInfoTableViewController.swift */; };
 		9C2C323F2A100D6400D09109 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C323E2A100D6400D09109 /* ConfigurationViewController.swift */; };
+		9C2C32412A10134A00D09109 /* ConfigurationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C32402A10134A00D09109 /* ConfigurationTableViewController.swift */; };
 		9CF49F142A0F73E900B9627E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF49F132A0F73E900B9627E /* AppDelegate.swift */; };
 		9CF49F162A0F73E900B9627E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF49F152A0F73E900B9627E /* SceneDelegate.swift */; };
 		9CF49F182A0F73E900B9627E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF49F172A0F73E900B9627E /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		9C2C323A2A0FA21200D09109 /* GameInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoTableViewController.swift; sourceTree = "<group>"; };
 		9C2C323D2A1005C800D09109 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9C2C323E2A100D6400D09109 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		9C2C32402A10134A00D09109 /* ConfigurationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTableViewController.swift; sourceTree = "<group>"; };
 		9CF49F102A0F73E900B9627E /* tre fysiker katte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tre fysiker katte.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF49F132A0F73E900B9627E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF49F152A0F73E900B9627E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,8 +54,9 @@
 			isa = PBXGroup;
 			children = (
 				9CF49F172A0F73E900B9627E /* ViewController.swift */,
-				9C2C323A2A0FA21200D09109 /* GameInfoTableViewController.swift */,
 				9C2C323E2A100D6400D09109 /* ConfigurationViewController.swift */,
+				9C2C323A2A0FA21200D09109 /* GameInfoTableViewController.swift */,
+				9C2C32402A10134A00D09109 /* ConfigurationTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				9CF49F2E2A0F798D00B9627E /* PuzzleLevel.swift in Sources */,
 				9C2C323F2A100D6400D09109 /* ConfigurationViewController.swift in Sources */,
 				9C2C323B2A0FA21200D09109 /* GameInfoTableViewController.swift in Sources */,
+				9C2C32412A10134A00D09109 /* ConfigurationTableViewController.swift in Sources */,
 				9CF49F182A0F73E900B9627E /* ViewController.swift in Sources */,
 				9CF49F2C2A0F798D00B9627E /* MovingDirection.swift in Sources */,
 				9CF49F142A0F73E900B9627E /* AppDelegate.swift in Sources */,

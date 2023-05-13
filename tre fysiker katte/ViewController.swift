@@ -7,13 +7,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PuzzleDelegate {
 
+   @IBOutlet weak var puzzleView: SlidingPuzzleView!
+   
    override func viewDidLoad() {
       super.viewDidLoad()
-      // Do any additional setup after loading the view.
+      
+      puzzleView.level = .normal
+      
+      puzzleView.puzzleImage = UIImage(named: "tre_fysiker_katte")
+      
+      puzzleView.delegate = self
+      
+      puzzleView.startPuzzle()
+      puzzleView.shuffle()
    }
-
-
+   
+   // MARK: - PuzzleDelegate
+   
+   func puzzleComplete(view: SlidingPuzzleView) {
+      
+   }
+   
+   func puzzleSwapCount(view: SlidingPuzzleView, count: Int) {
+      
+   }
+   
 }
 

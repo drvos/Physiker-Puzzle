@@ -13,10 +13,14 @@ class ViewController: UIViewController, PuzzleDelegate {
    
    var gameInfoVC: GameInfoTableViewController!
    
+   var timer: Timer?
+   var duration: Duration?
+   var secCount = 0
+   
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      puzzleView.level = .easy
+      puzzleView.level = .veryEasy
       
       puzzleView.puzzleImage = UIImage(named: "tre_fysiker_katte")
       
@@ -35,12 +39,24 @@ class ViewController: UIViewController, PuzzleDelegate {
    // MARK: - PuzzleDelegate
    
    func puzzleComplete(view: SlidingPuzzleView) {
-      
+      print("PuzzleComplete: Hurray")
+      timer?.invalidate()
    }
    
    func puzzleSwapCount(view: SlidingPuzzleView, count: Int) {
       // print("PuzzleSwapCount: \(count)")
+      if (count == 1) {
+         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(oneSecTimer), userInfo: nil, repeats: true)
+      }
       gameInfoVC.lblMoves.text = "\(count)"
+   }
+   
+   @objc func oneSecTimer() {
+      print("OneSecTimer fired")
+      secCount += 1
+      duration = Duration.seconds(secCount)
+      // "0:00:02"
+      gameInfoVC.lblTime.text = duration!.formatted()
    }
 
 }

@@ -45,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C2C323C2A10054D00D09109 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9CF49F172A0F73E900B9627E /* ViewController.swift */,
+				9C2C323A2A0FA21200D09109 /* GameInfoTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		9CF49F072A0F73E900B9627E = {
 			isa = PBXGroup;
 			children = (
@@ -67,8 +76,7 @@
 				9CF49F282A0F798D00B9627E /* SlidingPuzzle */,
 				9CF49F132A0F73E900B9627E /* AppDelegate.swift */,
 				9CF49F152A0F73E900B9627E /* SceneDelegate.swift */,
-				9CF49F172A0F73E900B9627E /* ViewController.swift */,
-				9C2C323A2A0FA21200D09109 /* GameInfoTableViewController.swift */,
+				9C2C323C2A10054D00D09109 /* ViewController */,
 				9CF49F192A0F73E900B9627E /* Main.storyboard */,
 				9CF49F1C2A0F73EB00B9627E /* Assets.xcassets */,
 				9CF49F1E2A0F73EB00B9627E /* LaunchScreen.storyboard */,

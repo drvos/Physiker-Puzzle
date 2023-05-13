@@ -1,8 +1,8 @@
 #  tre fysiker katte
 
 Drei Katzen großer Physiker:innen
-- Erwin Schrödinger
 - Albert Einstein
+- Erwin Schrödinger
 - Marie Curie
 
 ## Über

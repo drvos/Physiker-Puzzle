@@ -21,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		9C2C323A2A0FA21200D09109 /* GameInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoTableViewController.swift; sourceTree = "<group>"; };
+		9C2C323D2A1005C800D09109 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9CF49F102A0F73E900B9627E /* tre fysiker katte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tre fysiker katte.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF49F132A0F73E900B9627E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF49F152A0F73E900B9627E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 				9CF49F1C2A0F73EB00B9627E /* Assets.xcassets */,
 				9CF49F1E2A0F73EB00B9627E /* LaunchScreen.storyboard */,
 				9CF49F212A0F73EB00B9627E /* Info.plist */,
+				9C2C323D2A1005C800D09109 /* README.md */,
 			);
 			path = "tre fysiker katte";
 			sourceTree = "<group>";

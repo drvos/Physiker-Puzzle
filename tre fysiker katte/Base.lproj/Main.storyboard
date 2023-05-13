@@ -17,35 +17,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Ndz-XQ-0EU" customClass="SlidingPuzzleView" customModule="tre_fysiker_katte" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="375" width="393" height="393"/>
+                                <rect key="frame" x="0.0" y="379" width="393" height="393"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Ndz-XQ-0EU" secondAttribute="height" multiplier="1:1" id="Yjp-Lo-SJB"/>
+                                    <constraint firstAttribute="width" secondItem="Ndz-XQ-0EU" secondAttribute="height" multiplier="1:1" id="wTs-re-rox"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="puzzleImage" value="tre_fysiker_katte"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Einstein, Schrödinger und Marie Curie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8d-Sx-PI7">
-                                <rect key="frame" x="5" y="103" width="383" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Einstein, Schrödinger und Marie Curie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8d-Sx-PI7">
+                                <rect key="frame" x="8" y="101" width="376" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="q3q-mh-LWu"/>
-                                </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0I-Kg-FJN">
+                                <rect key="frame" x="0.0" y="189" width="393" height="182"/>
+                                <connections>
+                                    <segue destination="EnG-OM-RYj" kind="embed" identifier="gameInfoSegue" id="fi2-Lg-rQp"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="x8d-Sx-PI7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="0lQ-6h-s7V"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ndz-XQ-0EU" secondAttribute="trailing" id="1Zl-fO-bYa"/>
-                            <constraint firstItem="x8d-Sx-PI7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DRq-9u-BTQ"/>
-                            <constraint firstItem="Ndz-XQ-0EU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JLW-mr-CPh"/>
-                            <constraint firstItem="x8d-Sx-PI7" firstAttribute="centerX" secondItem="Ndz-XQ-0EU" secondAttribute="centerX" id="YnG-cv-veY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ndz-XQ-0EU" secondAttribute="bottom" constant="50" id="f6r-MK-CGN"/>
+                            <constraint firstItem="N0I-Kg-FJN" firstAttribute="trailing" secondItem="Ndz-XQ-0EU" secondAttribute="trailing" id="A5Z-rA-sGn"/>
+                            <constraint firstAttribute="trailing" secondItem="N0I-Kg-FJN" secondAttribute="trailing" id="Crx-hd-v5P"/>
+                            <constraint firstAttribute="bottom" secondItem="N0I-Kg-FJN" secondAttribute="bottom" constant="481" id="Fxe-wK-Vh6"/>
+                            <constraint firstItem="N0I-Kg-FJN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="189" id="Lwk-fC-suW"/>
+                            <constraint firstItem="N0I-Kg-FJN" firstAttribute="leading" secondItem="Ndz-XQ-0EU" secondAttribute="leading" id="Trr-Sd-23F"/>
+                            <constraint firstItem="N0I-Kg-FJN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qvc-er-hM9"/>
+                            <constraint firstItem="Ndz-XQ-0EU" firstAttribute="top" secondItem="N0I-Kg-FJN" secondAttribute="bottom" constant="8" symbolic="YES" id="zkL-ZR-DhE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="tre fysiker katte" id="RjF-n7-6gP"/>
@@ -56,6 +61,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-390.07633587786256" y="-814.08450704225356"/>
+        </scene>
+        <!--Game Info Table View Controller-->
+        <scene sceneID="Ndw-2Y-edA">
+            <objects>
+                <tableViewController id="EnG-OM-RYj" customClass="GameInfoTableViewController" customModule="tre_fysiker_katte" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Fr8-lD-5ww">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="182"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Spielinformationen" id="UGq-yF-iEQ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="cPJ-qT-PWE" detailTextLabel="dba-EG-xEU" style="IBUITableViewCellStyleValue1" id="vU9-Ng-uSF">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vU9-Ng-uSF" id="QOL-31-XkU">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Züge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cPJ-qT-PWE">
+                                                    <rect key="frame" x="20" y="15" width="29.333333333333332" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dba-EG-xEU">
+                                                    <rect key="frame" x="365.33333333333331" y="15" width="7.666666666666667" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="LRV-T1-4Hw" detailTextLabel="JPZ-YV-7Po" style="IBUITableViewCellStyleValue1" id="9Zj-Tw-a2H">
+                                        <rect key="frame" x="0.0" y="93.666667938232422" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Zj-Tw-a2H" id="KGR-m0-HOm">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Zeit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LRV-T1-4Hw">
+                                                    <rect key="frame" x="20" y="15" width="22" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="00:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JPZ-YV-7Po">
+                                                    <rect key="frame" x="320.33333333333331" y="15" width="52.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="EnG-OM-RYj" id="doH-0D-Ud9"/>
+                            <outlet property="delegate" destination="EnG-OM-RYj" id="nKb-zR-a0M"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="lblMoves" destination="dba-EG-xEU" id="yr6-3x-UW4"/>
+                        <outlet property="lblTime" destination="JPZ-YV-7Po" id="hft-wZ-srx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yAy-aR-pQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="-823"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cw3-Cu-JFn">

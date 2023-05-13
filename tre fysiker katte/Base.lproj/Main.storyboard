@@ -142,7 +142,7 @@
         <!--Einstellungen-->
         <scene sceneID="ooJ-RA-5l4">
             <objects>
-                <viewController id="vPF-mn-DqS" sceneMemberID="viewController">
+                <viewController id="vPF-mn-DqS" customClass="ConfigurationViewController" customModule="tre_fysiker_katte" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oiK-hB-56T">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

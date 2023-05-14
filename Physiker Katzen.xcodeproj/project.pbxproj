@@ -28,7 +28,7 @@
 		9C2C323E2A100D6400D09109 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		9C2C32402A10134A00D09109 /* ConfigurationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTableViewController.swift; sourceTree = "<group>"; };
 		9C2C32422A10B84700D09109 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		9CF49F102A0F73E900B9627E /* tre fysiker katte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tre fysiker katte.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF49F102A0F73E900B9627E /* Physiker Katzen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Physiker Katzen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF49F132A0F73E900B9627E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF49F152A0F73E900B9627E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9CF49F172A0F73E900B9627E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		9CF49F072A0F73E900B9627E = {
 			isa = PBXGroup;
 			children = (
-				9CF49F122A0F73E900B9627E /* tre fysiker katte */,
+				9CF49F122A0F73E900B9627E /* Physiker Katzen */,
 				9CF49F112A0F73E900B9627E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,12 +74,12 @@
 		9CF49F112A0F73E900B9627E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CF49F102A0F73E900B9627E /* tre fysiker katte.app */,
+				9CF49F102A0F73E900B9627E /* Physiker Katzen.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9CF49F122A0F73E900B9627E /* tre fysiker katte */ = {
+		9CF49F122A0F73E900B9627E /* Physiker Katzen */ = {
 			isa = PBXGroup;
 			children = (
 				9C2C32422A10B84700D09109 /* Settings.swift */,
@@ -93,7 +93,7 @@
 				9CF49F212A0F73EB00B9627E /* Info.plist */,
 				9C2C323D2A1005C800D09109 /* README.md */,
 			);
-			path = "tre fysiker katte";
+			path = "Physiker Katzen";
 			sourceTree = "<group>";
 		};
 		9CF49F282A0F798D00B9627E /* SlidingPuzzle */ = {
@@ -109,9 +109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9CF49F0F2A0F73E900B9627E /* tre fysiker katte */ = {
+		9CF49F0F2A0F73E900B9627E /* Physiker Katzen */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CF49F242A0F73EB00B9627E /* Build configuration list for PBXNativeTarget "tre fysiker katte" */;
+			buildConfigurationList = 9CF49F242A0F73EB00B9627E /* Build configuration list for PBXNativeTarget "Physiker Katzen" */;
 			buildPhases = (
 				9CF49F0C2A0F73E900B9627E /* Sources */,
 				9CF49F0D2A0F73E900B9627E /* Frameworks */,
@@ -121,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = "tre fysiker katte";
+			name = "Physiker Katzen";
 			productName = "tre fysiker katte";
-			productReference = 9CF49F102A0F73E900B9627E /* tre fysiker katte.app */;
+			productReference = 9CF49F102A0F73E900B9627E /* Physiker Katzen.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9CF49F0B2A0F73E900B9627E /* Build configuration list for PBXProject "tre fysiker katte" */;
+			buildConfigurationList = 9CF49F0B2A0F73E900B9627E /* Build configuration list for PBXProject "Physiker Katzen" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -154,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9CF49F0F2A0F73E900B9627E /* tre fysiker katte */,
+				9CF49F0F2A0F73E900B9627E /* Physiker Katzen */,
 			);
 		};
 /* End PBXProject section */
@@ -335,19 +335,19 @@
 				CURRENT_PROJECT_VERSION = 20230514;
 				DEVELOPMENT_TEAM = 244ZF284NG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "tre fysiker katte/Info.plist";
+				INFOPLIST_FILE = "Physiker Katzen/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.volker-schering.tre-fysiker-katte";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.volker-schering.physiker-katzen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -364,19 +364,19 @@
 				CURRENT_PROJECT_VERSION = 20230514;
 				DEVELOPMENT_TEAM = 244ZF284NG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "tre fysiker katte/Info.plist";
+				INFOPLIST_FILE = "Physiker Katzen/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.volker-schering.tre-fysiker-katte";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.volker-schering.physiker-katzen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -387,7 +387,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9CF49F0B2A0F73E900B9627E /* Build configuration list for PBXProject "tre fysiker katte" */ = {
+		9CF49F0B2A0F73E900B9627E /* Build configuration list for PBXProject "Physiker Katzen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CF49F222A0F73EB00B9627E /* Debug */,
@@ -396,7 +396,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CF49F242A0F73EB00B9627E /* Build configuration list for PBXNativeTarget "tre fysiker katte" */ = {
+		9CF49F242A0F73EB00B9627E /* Build configuration list for PBXNativeTarget "Physiker Katzen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CF49F252A0F73EB00B9627E /* Debug */,

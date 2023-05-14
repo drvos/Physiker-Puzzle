@@ -1,9 +1,10 @@
-#  tre fysiker katte
+#  Physiker Katzen
 
-Drei Katzen großer Physiker:innen
-- Albert Einstein
-- Erwin Schrödinger
-- Marie Curie
+Drei Katzen mit Namen großer Physiker:innen
+   - Albert Einstein
+   - Erwin Schrödinger
+   - Marie Curie
+als Schiebepuzzle.
 
 ## Über
 

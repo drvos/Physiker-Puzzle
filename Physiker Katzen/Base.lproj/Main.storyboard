@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JrA-1z-0eO">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,16 +7,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--tre fysiker katte-->
+        <!--Physiker Katzen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tre_fysiker_katte" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Ndz-XQ-0EU" customClass="SlidingPuzzleView" customModule="tre_fysiker_katte" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="379" width="393" height="393"/>
+                                <rect key="frame" x="0.0" y="379" width="600" height="600"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ndz-XQ-0EU" secondAttribute="height" multiplier="1:1" id="wTs-re-rox"/>
@@ -35,7 +34,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0I-Kg-FJN">
-                                <rect key="frame" x="0.0" y="189" width="393" height="182"/>
+                                <rect key="frame" x="0.0" y="189" width="600" height="182"/>
                                 <connections>
                                     <segue destination="EnG-OM-RYj" kind="embed" identifier="gameInfoSegue" id="fi2-Lg-rQp"/>
                                 </connections>
@@ -53,7 +52,7 @@
                             <constraint firstItem="Ndz-XQ-0EU" firstAttribute="top" secondItem="N0I-Kg-FJN" secondAttribute="bottom" constant="8" symbolic="YES" id="zkL-ZR-DhE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="tre fysiker katte" id="RjF-n7-6gP"/>
+                    <navigationItem key="navigationItem" title="Physiker Katzen" id="RjF-n7-6gP"/>
                     <connections>
                         <outlet property="puzzleView" destination="Ndz-XQ-0EU" id="aYv-gp-vOs"/>
                         <segue destination="vPF-mn-DqS" kind="show" identifier="configurationSegue" id="fy7-v1-I7q"/>
@@ -68,28 +67,28 @@
             <objects>
                 <tableViewController id="EnG-OM-RYj" customClass="GameInfoTableViewController" customModule="tre_fysiker_katte" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Fr8-lD-5ww">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="182"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Spielinformationen" id="UGq-yF-iEQ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="cPJ-qT-PWE" detailTextLabel="dba-EG-xEU" style="IBUITableViewCellStyleValue1" id="vU9-Ng-uSF">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vU9-Ng-uSF" id="QOL-31-XkU">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Züge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cPJ-qT-PWE">
-                                                    <rect key="frame" x="20" y="15" width="29.333333333333332" height="14.333333333333334"/>
+                                                    <rect key="frame" x="-18" y="55" width="29" height="49"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dba-EG-xEU">
-                                                    <rect key="frame" x="365.33333333333331" y="15" width="7.666666666666667" height="14.333333333333334"/>
+                                                    <rect key="frame" x="69" y="-29" width="98" height="1"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
@@ -99,21 +98,21 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="LRV-T1-4Hw" detailTextLabel="JPZ-YV-7Po" style="IBUITableViewCellStyleValue1" id="9Zj-Tw-a2H">
-                                        <rect key="frame" x="0.0" y="93.666667938232422" width="393" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Zj-Tw-a2H" id="KGR-m0-HOm">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Zeit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LRV-T1-4Hw">
-                                                    <rect key="frame" x="20" y="15" width="22" height="14.333333333333334"/>
+                                                    <rect key="frame" x="36" y="-47" width="17" height="79"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="0:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JPZ-YV-7Po">
-                                                    <rect key="frame" x="328" y="15" width="45" height="14.333333333333334"/>
+                                                    <rect key="frame" x="16" y="-6" width="50" height="53"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
@@ -144,11 +143,11 @@
             <objects>
                 <viewController id="vPF-mn-DqS" customClass="ConfigurationViewController" customModule="tre_fysiker_katte" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oiK-hB-56T">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puX-Jc-jtN">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <connections>
                                     <segue destination="zzn-bJ-08Z" kind="embed" id="U1l-kX-BYu"/>
                                 </connections>
@@ -176,35 +175,35 @@
             <objects>
                 <tableViewController id="zzn-bJ-08Z" customClass="ConfigurationTableViewController" customModule="tre_fysiker_katte" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="gL6-5y-3Ue">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="715"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Schiebepuzzle" id="aSS-p4-Mdg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="UWP-5y-qaw" detailTextLabel="F5n-3g-7lf" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="qhh-vq-nrV">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="55"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qhh-vq-nrV" id="622-en-W1w">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Schwierigkeit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UWP-5y-qaw">
-                                                    <rect key="frame" x="20.000000000000007" y="9.9999999999999982" width="101.66666666666667" height="20.333333333333332"/>
+                                                    <rect key="frame" x="20" y="37" width="101.66666666666669" height="62"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="24 Teile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F5n-3g-7lf">
-                                                    <rect key="frame" x="20.000000000000004" y="31.333333333333332" width="44.333333333333336" height="14.333333333333334"/>
+                                                    <rect key="frame" x="-64" y="55" width="50" height="48"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gmy-4C-5jt">
-                                                    <rect key="frame" x="173.33333333333337" y="6" width="205.66666666666663" height="32"/>
+                                                    <rect key="frame" x="173" y="6" width="205.66666666666663" height="22"/>
                                                     <segments>
                                                         <segment title="einfach"/>
                                                         <segment title="normal"/>

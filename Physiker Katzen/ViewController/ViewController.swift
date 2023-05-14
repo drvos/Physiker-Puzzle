@@ -28,9 +28,8 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
       navigationItem.rightBarButtonItem =
       UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain,
                       target: self, action: #selector(prefsTapped))
-      
-      puzzleView.puzzleImage = UIImage(named: "tre_fysiker_katte")
-      
+      puzzleView.puzzleImage = UIImage(named: "PuzzlePicture")
+      puzzleView.layoutSubviews()
       self.startPuzzle()
    }
    

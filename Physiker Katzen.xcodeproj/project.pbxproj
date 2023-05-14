@@ -99,9 +99,9 @@
 		9CF49F282A0F798D00B9627E /* SlidingPuzzle */ = {
 			isa = PBXGroup;
 			children = (
+				9CF49F2B2A0F798D00B9627E /* PuzzleLevel.swift */,
 				9CF49F292A0F798D00B9627E /* MovingDirection.swift */,
 				9CF49F2A2A0F798D00B9627E /* SlidingPuzzleView.swift */,
-				9CF49F2B2A0F798D00B9627E /* PuzzleLevel.swift */,
 			);
 			path = SlidingPuzzle;
 			sourceTree = "<group>";

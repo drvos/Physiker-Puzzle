@@ -8,38 +8,33 @@
 import UIKit
 
 class ConfigurationTableViewController: UITableViewController {
- 
-   var delegate: configurationTableViewControllerDelegate!
 
    @IBOutlet weak var puzzleLevelSegment: UISegmentedControl!
    @IBOutlet weak var puzzleLevelLabel: UILabel!
    
+   let settings = Settings.shared
+   
    override func viewDidLoad() {
       super.viewDidLoad()
+      puzzleLevelSegment.selectedSegmentIndex = settings.puzzleLevelAsSegmentIndex()
    }
    
    @IBAction func segmentPuzzleLevel(_ sender: UISegmentedControl) {
       let segmentIndex = Int(puzzleLevelSegment.selectedSegmentIndex)
       print("SegmentPuzzleLevel: \(segmentIndex)")
-      var puzzleLevel: PuzzleLevel
       switch (puzzleLevelSegment.selectedSegmentIndex) {
          case 0: // einfach
             puzzleLevelLabel.text = "wenig Teile"
-            puzzleLevel = .easy
+            settings.puzzleLevel = .easy
          case 1: // normal
             puzzleLevelLabel.text = "normale Teile"
-            puzzleLevel = .normal
+            settings.puzzleLevel = .normal
          case 2: // schwer
             puzzleLevelLabel.text = "viele Teile"
-            puzzleLevel = .hard
+            settings.puzzleLevel = .hard
          default:
             puzzleLevelLabel.text = "Hö?"
-            puzzleLevel = .veryEasy
+            settings.puzzleLevel = .veryEasy
       }
-      delegate?.puzzleLevelChanged(puzzleLevel: puzzleLevel)
    }
-}
-
-protocol configurationTableViewControllerDelegate {
-   func puzzleLevelChanged(puzzleLevel: PuzzleLevel)
 }

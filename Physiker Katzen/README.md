@@ -19,8 +19,12 @@ ein Spiel - ein [Schiebepuzzle](https://de.wikipedia.org/wiki/15-Puzzle)
 ## Spiel
 
 Oben genanntes Bild als Vorlage für ein Schiebepuzzle als iOS-App.
+
 Die Vorlage und große Teile der App stammen von kokonak und seiner 
 [SlidingPuzzleView](https://github.com/kokonak/SlidingPuzzleView)
+
+Der [HapticGenerator](https://github.com/KaneCheshire/HapticGenerator) 
+für haptisches Feedback von KaneCheshire.
 
 ## Todo
 

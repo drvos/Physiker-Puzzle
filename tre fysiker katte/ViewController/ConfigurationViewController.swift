@@ -13,4 +13,3 @@ class ConfigurationViewController: UIViewController {
       super.viewDidLoad()
    }
 }
-

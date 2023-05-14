@@ -28,7 +28,6 @@ für haptisches Feedback von KaneCheshire.
 
 ## Todo
 
-- Vibration bei Zug und Gewinn
 - Anzeige des kompletten Bild bei Gewinn
 
 ## Autor

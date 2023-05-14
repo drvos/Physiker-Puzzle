@@ -56,6 +56,7 @@
                     <navigationItem key="navigationItem" title="tre fysiker katte" id="RjF-n7-6gP"/>
                     <connections>
                         <outlet property="puzzleView" destination="Ndz-XQ-0EU" id="aYv-gp-vOs"/>
+                        <segue destination="vPF-mn-DqS" kind="show" identifier="configurationSegue" id="fy7-v1-I7q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -136,7 +137,107 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yAy-aR-pQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="498" y="-823"/>
+            <point key="canvasLocation" x="457" y="-1251"/>
+        </scene>
+        <!--Einstellungen-->
+        <scene sceneID="ooJ-RA-5l4">
+            <objects>
+                <viewController id="vPF-mn-DqS" customClass="ConfigurationViewController" customModule="tre_fysiker_katte" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oiK-hB-56T">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puX-Jc-jtN">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <connections>
+                                    <segue destination="zzn-bJ-08Z" kind="embed" id="U1l-kX-BYu"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VGl-3n-Ntd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="puX-Jc-jtN" firstAttribute="top" secondItem="VGl-3n-Ntd" secondAttribute="top" id="Qfu-Ci-Xzh"/>
+                            <constraint firstItem="VGl-3n-Ntd" firstAttribute="trailing" secondItem="puX-Jc-jtN" secondAttribute="trailing" id="S6e-Iv-rg4"/>
+                            <constraint firstItem="puX-Jc-jtN" firstAttribute="leading" secondItem="VGl-3n-Ntd" secondAttribute="leading" id="aHA-t2-uhr"/>
+                            <constraint firstItem="VGl-3n-Ntd" firstAttribute="bottom" secondItem="puX-Jc-jtN" secondAttribute="bottom" id="tcK-hs-sWv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Einstellungen" id="hLk-kZ-yms">
+                        <barButtonItem key="backBarButtonItem" title="Zurück" id="j3x-Vt-2at"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9OA-n2-DMS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455.72519083969462" y="-814.08450704225356"/>
+        </scene>
+        <!--Configuration Table View Controller-->
+        <scene sceneID="tTr-q9-JoD">
+            <objects>
+                <tableViewController id="zzn-bJ-08Z" customClass="ConfigurationTableViewController" customModule="tre_fysiker_katte" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="gL6-5y-3Ue">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="715"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="aSS-p4-Mdg">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="UWP-5y-qaw" detailTextLabel="F5n-3g-7lf" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="qhh-vq-nrV">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qhh-vq-nrV" id="622-en-W1w">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Schwierigkeit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UWP-5y-qaw">
+                                                    <rect key="frame" x="20.000000000000007" y="9.9999999999999982" width="101.66666666666667" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="24 Teile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F5n-3g-7lf">
+                                                    <rect key="frame" x="20.000000000000004" y="31.333333333333332" width="44.333333333333336" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gmy-4C-5jt">
+                                                    <rect key="frame" x="173.33333333333337" y="6" width="205.66666666666663" height="32"/>
+                                                    <segments>
+                                                        <segment title="einfach"/>
+                                                        <segment title="normal"/>
+                                                        <segment title="schwer"/>
+                                                    </segments>
+                                                    <connections>
+                                                        <action selector="segmentPuzzleLevel:" destination="zzn-bJ-08Z" eventType="valueChanged" id="4zt-FN-yKi"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Gmy-4C-5jt" firstAttribute="leading" secondItem="UWP-5y-qaw" secondAttribute="trailing" constant="51.5" id="Ewq-nU-9uV"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Gmy-4C-5jt" secondAttribute="trailing" constant="-6" id="I1c-3w-nzq"/>
+                                                <constraint firstItem="Gmy-4C-5jt" firstAttribute="top" secondItem="622-en-W1w" secondAttribute="topMargin" constant="-2" id="V3a-hB-hVE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="zzn-bJ-08Z" id="QtR-4l-2jm"/>
+                            <outlet property="delegate" destination="zzn-bJ-08Z" id="1AS-aZ-pM4"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="puzzleLevelLabel" destination="F5n-3g-7lf" id="H5W-b0-W5h"/>
+                        <outlet property="puzzleLevelSegment" destination="Gmy-4C-5jt" id="nhE-5R-qr9"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4u-p8-3lz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1243.5114503816794" y="-822.18309859154931"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cw3-Cu-JFn">

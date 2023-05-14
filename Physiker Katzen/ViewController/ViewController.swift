@@ -68,6 +68,7 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
    
    func puzzleComplete(view: SlidingPuzzleView) {
       print("PuzzleComplete: Hurray")
+      Haptic.success.generate()
       self.stopPuzzle()
    }
    

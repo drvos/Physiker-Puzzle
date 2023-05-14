@@ -11,6 +11,7 @@
 		9C2C323F2A100D6400D09109 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C323E2A100D6400D09109 /* ConfigurationViewController.swift */; };
 		9C2C32412A10134A00D09109 /* ConfigurationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C32402A10134A00D09109 /* ConfigurationTableViewController.swift */; };
 		9C2C32432A10B84700D09109 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C32422A10B84700D09109 /* Settings.swift */; };
+		9CCFA6642A114F6000255ECB /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCFA6632A114F6000255ECB /* HapticGenerator.swift */; };
 		9CF49F142A0F73E900B9627E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF49F132A0F73E900B9627E /* AppDelegate.swift */; };
 		9CF49F162A0F73E900B9627E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF49F152A0F73E900B9627E /* SceneDelegate.swift */; };
 		9CF49F182A0F73E900B9627E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF49F172A0F73E900B9627E /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		9C2C323E2A100D6400D09109 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		9C2C32402A10134A00D09109 /* ConfigurationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTableViewController.swift; sourceTree = "<group>"; };
 		9C2C32422A10B84700D09109 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		9CCFA6632A114F6000255ECB /* HapticGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
 		9CF49F102A0F73E900B9627E /* Physiker Katzen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Physiker Katzen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF49F132A0F73E900B9627E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF49F152A0F73E900B9627E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		9CCFA6622A114F1500255ECB /* HapticGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				9CCFA6632A114F6000255ECB /* HapticGenerator.swift */,
+			);
+			path = HapticGenerator;
+			sourceTree = "<group>";
+		};
 		9CF49F072A0F73E900B9627E = {
 			isa = PBXGroup;
 			children = (
@@ -82,11 +92,12 @@
 		9CF49F122A0F73E900B9627E /* Physiker Katzen */ = {
 			isa = PBXGroup;
 			children = (
-				9C2C32422A10B84700D09109 /* Settings.swift */,
+				9CCFA6622A114F1500255ECB /* HapticGenerator */,
 				9CF49F282A0F798D00B9627E /* SlidingPuzzle */,
 				9CF49F132A0F73E900B9627E /* AppDelegate.swift */,
 				9CF49F152A0F73E900B9627E /* SceneDelegate.swift */,
 				9C2C323C2A10054D00D09109 /* ViewController */,
+				9C2C32422A10B84700D09109 /* Settings.swift */,
 				9CF49F192A0F73E900B9627E /* Main.storyboard */,
 				9CF49F1C2A0F73EB00B9627E /* Assets.xcassets */,
 				9CF49F1E2A0F73EB00B9627E /* LaunchScreen.storyboard */,
@@ -180,6 +191,7 @@
 				9CF49F2E2A0F798D00B9627E /* PuzzleLevel.swift in Sources */,
 				9C2C323F2A100D6400D09109 /* ConfigurationViewController.swift in Sources */,
 				9C2C323B2A0FA21200D09109 /* GameInfoTableViewController.swift in Sources */,
+				9CCFA6642A114F6000255ECB /* HapticGenerator.swift in Sources */,
 				9C2C32412A10134A00D09109 /* ConfigurationTableViewController.swift in Sources */,
 				9C2C32432A10B84700D09109 /* Settings.swift in Sources */,
 				9CF49F182A0F73E900B9627E /* ViewController.swift in Sources */,

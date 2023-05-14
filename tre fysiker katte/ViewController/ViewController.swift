@@ -18,7 +18,6 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
    
    var timer: Timer?
    var duration: Duration?
-   var secCount = 0
    
    override func viewDidLoad() {
       super.viewDidLoad()
@@ -44,6 +43,8 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
    
    func stopPuzzle() {
       self.timer?.invalidate()
+      gameInfoTableViewController.resetTime()
+      gameInfoTableViewController.resetCount()
    }
    
    func restartPuzzle() {
@@ -76,22 +77,22 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
          print("Game started")
          timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(oneSecTimer), userInfo: nil, repeats: true)
       }
-      gameInfoTableViewController.lblMoves.text = "\(count)"
+      gameInfoTableViewController.movesLabel.text = "\(count)"
    }
    
    @objc func oneSecTimer() {
       print("OneSecTimer fired")
-      secCount += 1
-      duration = Duration.seconds(secCount)
+      gameInfoTableViewController.secCount += 1
+      duration = Duration.seconds(gameInfoTableViewController.secCount)
       // "0:00:02"
-      gameInfoTableViewController.lblTime.text = duration!.formatted()
+      gameInfoTableViewController.timeLabel.text = duration!.formatted()
    }
    
    // MARK: - SettingsDelegate
    
    func puzzleLevelSettingChanged(level: PuzzleLevel) {
       print("PuzzleLevelSettingChanged \(level)")
-      // TODO: Spiel stoppen und neu starten
+      // DONE: Spiel stoppen und neu starten
       restartPuzzle()
    }
 

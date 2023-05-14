@@ -131,8 +131,8 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="lblMoves" destination="dba-EG-xEU" id="yr6-3x-UW4"/>
-                        <outlet property="lblTime" destination="JPZ-YV-7Po" id="hft-wZ-srx"/>
+                        <outlet property="movesLabel" destination="dba-EG-xEU" id="n76-VN-ZFv"/>
+                        <outlet property="timeLabel" destination="JPZ-YV-7Po" id="wqi-rM-fGh"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yAy-aR-pQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

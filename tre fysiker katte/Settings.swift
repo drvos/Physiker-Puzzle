@@ -31,16 +31,12 @@ class Settings {
    
    func puzzleLevelAsSegmentIndex() -> Int {
       // To use in SegmentControl
-      switch (self.puzzleLevel) {
-         case .veryEasy:
-            return -1
-         case .easy:
-            return 0
-         case .normal:
-            return 1
-         case .hard:
-            return 2
-      }
+      return self.puzzleLevel.rawValue - 3
+   }
+   
+   func countPieces() -> Int {
+      // To use in ConfigurationTable
+      return Int(pow(CGFloat(self.puzzleLevel.rawValue), 2))
    }
    
 }

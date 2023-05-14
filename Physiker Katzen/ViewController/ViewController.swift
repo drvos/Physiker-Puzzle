@@ -35,6 +35,7 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
    
    func startPuzzle() {
       puzzleView.level = settings.puzzleLevel
+      puzzleView.swapAnimationDuration = settings.puzzleSwapAnimationDuration
       
       puzzleView.startPuzzle()
       puzzleView.shuffle()

@@ -15,6 +15,7 @@ class Settings {
    
    private init(level: PuzzleLevel = .normal) {
       self.puzzleLevel = level
+      self.puzzleSwapAnimationDuration = 0.2
    }
    
    static let shared: Settings = { return Settings(level: .normal) }()
@@ -24,10 +25,11 @@ class Settings {
    // PuzzleLevel as PuzzleLevel (easy, normal, hard
    var puzzleLevel: PuzzleLevel {
       didSet {
-         print("PuzzleLevelIs: \(puzzleLevel)")
+         print("PuzzleLevel: \(puzzleLevel)")
          delegate?.puzzleLevelSettingChanged(level: puzzleLevel)
       }
    }
+   var puzzleSwapAnimationDuration: Double
    
    func puzzleLevelAsSegmentIndex() -> Int {
       // To use in SegmentControl

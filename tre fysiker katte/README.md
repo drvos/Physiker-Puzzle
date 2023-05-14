@@ -23,10 +23,8 @@ Die Vorlage und große Teile der App stammen von kokonak und seiner
 
 ## Todo
 
-- Einstellung des Schwierigkeitgrad
 - Vibration bei Zug und Gewinn
 - Anzeige des kompletten Bild bei Gewinn
-- Neustart Puzzle
 
 ## Autor
 

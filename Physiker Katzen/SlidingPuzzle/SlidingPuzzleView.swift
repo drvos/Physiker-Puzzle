@@ -195,6 +195,7 @@ final class SlidingPuzzleView: UIView {
         || tapPieceIndex == emptyPieceIndex - level.rawValue
 
         guard swapable else { return }
+        Haptic.selection.generate(prepareForReuse: true)
         puzzleImageViews.swapAt(emptyPieceIndex, tapPieceIndex)
         viewSwapAnimation(view1: view, view2: emptyPieceView)
     }

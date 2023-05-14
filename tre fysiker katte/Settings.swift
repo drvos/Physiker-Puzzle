@@ -7,22 +7,39 @@
 
 import Foundation
 
-class Settings {
+protocol SettingsDelegate {
+   func puzzleLevelSettingChanged(level: PuzzleLevel)
+}
 
-   static let shared: Settings = {
-      let instance = Settings(level: .normal)
-      // setup code
-      return instance
-   }()
+class Settings {
    
-   internal init(level: PuzzleLevel = .normal) {
+   private init(level: PuzzleLevel = .normal) {
       self.puzzleLevel = level
    }
    
-   // PuzzleLevel 3-5
+   static let shared: Settings = { return Settings(level: .normal) }()
+   
+   var delegate: SettingsDelegate?
+   
+   // PuzzleLevel as PuzzleLevel (easy, normal, hard
    var puzzleLevel: PuzzleLevel {
       didSet {
          print("PuzzleLevelIs: \(puzzleLevel)")
+         delegate?.puzzleLevelSettingChanged(level: puzzleLevel)
+      }
+   }
+   
+   func puzzleLevelAsSegmentIndex() -> Int {
+      // To use in SegmentControl
+      switch (self.puzzleLevel) {
+         case .veryEasy:
+            return -1
+         case .easy:
+            return 0
+         case .normal:
+            return 1
+         case .hard:
+            return 2
       }
    }
    

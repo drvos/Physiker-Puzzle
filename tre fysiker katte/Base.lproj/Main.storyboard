@@ -180,7 +180,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
-                            <tableViewSection id="aSS-p4-Mdg">
+                            <tableViewSection headerTitle="Schiebepuzzle" id="aSS-p4-Mdg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" textLabel="UWP-5y-qaw" detailTextLabel="F5n-3g-7lf" rowHeight="55" style="IBUITableViewCellStyleSubtitle" id="qhh-vq-nrV">
                                         <rect key="frame" x="0.0" y="50" width="393" height="55"/>

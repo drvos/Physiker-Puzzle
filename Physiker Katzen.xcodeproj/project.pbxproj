@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -142,7 +142,7 @@
 				};
 			};
 			buildConfigurationList = 9CF49F0B2A0F73E900B9627E /* Build configuration list for PBXProject "Physiker Katzen" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (

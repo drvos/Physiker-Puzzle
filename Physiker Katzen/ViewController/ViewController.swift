@@ -11,13 +11,8 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
 
    @IBOutlet weak var puzzleView: SlidingPuzzleView!
    
-   var configurationViewController: ConfigurationViewController!
-   var gameInfoTableViewController: GameInfoTableViewController!
-   
    let settings = Settings.shared
-   
-   var timer: Timer?
-   var duration: Duration?
+   let gameinfos = Gameinfo.shared
    
    override func viewDidLoad() {
       super.viewDidLoad()
@@ -41,25 +36,6 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
       puzzleView.shuffle()
    }
    
-   func stopPuzzle() {
-      self.timer?.invalidate()
-      gameInfoTableViewController.resetTime()
-      gameInfoTableViewController.resetCount()
-   }
-   
-   func restartPuzzle() {
-      self.stopPuzzle()
-      self.startPuzzle()
-   }
-   
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      if (segue.destination .isKind(of: ConfigurationViewController.self)) {
-         configurationViewController = segue.destination as? ConfigurationViewController
-      } else if (segue.destination .isKind(of: GameInfoTableViewController.self)) {
-         gameInfoTableViewController = segue.destination as? GameInfoTableViewController
-      }
-   }
-   
    @objc func prefsTapped() {
       self.performSegue(withIdentifier: "configurationSegue", sender: self)
    }
@@ -69,24 +45,14 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
    func puzzleComplete(view: SlidingPuzzleView) {
       print("PuzzleComplete: Hurray")
       Haptic.success.generate()
-      self.stopPuzzle()
+      self.performSegue(withIdentifier: "winSegue", sender: self)
+      gameinfos.stop()
+      puzzleView.shuffle()
    }
    
    func puzzleSwapCount(view: SlidingPuzzleView, count: Int) {
       print("PuzzleSwapCountIs: \(count)")
-      if (count == 1) {
-         print("Game started")
-         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(oneSecTimer), userInfo: nil, repeats: true)
-      }
-      gameInfoTableViewController.movesLabel.text = "\(count)"
-   }
-   
-   @objc func oneSecTimer() {
-      print("OneSecTimer fired")
-      gameInfoTableViewController.secCount += 1
-      duration = Duration.seconds(gameInfoTableViewController.secCount)
-      // "0:00:02"
-      gameInfoTableViewController.timeLabel.text = duration!.formatted()
+      gameinfos.moves = count
    }
    
    // MARK: - SettingsDelegate
@@ -94,7 +60,7 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
    func puzzleLevelSettingChanged(level: PuzzleLevel) {
       print("PuzzleLevelSettingChanged \(level)")
       // DONE: Spiel stoppen und neu starten
-      restartPuzzle()
+      gameinfos.stop()
+      gameinfos.reset()
    }
-
 }

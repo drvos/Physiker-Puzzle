@@ -10,11 +10,12 @@ import UIKit
 class WinViewController: UIViewController {
    
    @IBOutlet weak var winImageView: UIImageView!
+   @IBOutlet weak var winCrownImageView: UIImageView!
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
       self.winImageView.image = UIImage(named: "PuzzlePicture")
-      
+      self.winCrownImageView.image = UIImage(named: "CrownPicture")
    }
 }

@@ -28,17 +28,24 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rqm-f0-YKW">
+                                <rect key="frame" x="71.666666666666686" y="272" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="DVe-lp-tTl"/>
+                                    <constraint firstAttribute="width" constant="250" id="QPr-J0-Ls9"/>
+                                </constraints>
+                            </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRb-gh-pCe">
                                 <rect key="frame" x="16" y="530" width="361" height="292"/>
                                 <connections>
                                     <segue destination="fwz-cd-HMH" kind="embed" id="InI-Th-khW"/>
                                 </connections>
                             </containerView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rqm-f0-YKW">
-                                <rect key="frame" x="71.666666666666686" y="272" width="250" height="250"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-ml-GDt">
+                                <rect key="frame" x="131.66666666666666" y="96" width="129.99999999999997" height="103"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="DVe-lp-tTl"/>
-                                    <constraint firstAttribute="width" constant="250" id="QPr-J0-Ls9"/>
+                                    <constraint firstAttribute="width" constant="130" id="3M6-SF-goG"/>
+                                    <constraint firstAttribute="height" constant="103" id="HkG-9x-w6T"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -51,12 +58,15 @@
                             <constraint firstItem="rqm-f0-YKW" firstAttribute="centerX" secondItem="Adc-xt-vCG" secondAttribute="centerX" id="7aL-sl-Oxk"/>
                             <constraint firstItem="yRb-gh-pCe" firstAttribute="leading" secondItem="Adc-xt-vCG" secondAttribute="leadingMargin" id="BHr-aY-3xK"/>
                             <constraint firstItem="rqm-f0-YKW" firstAttribute="centerX" secondItem="nWT-JH-rF3" secondAttribute="centerX" id="K2E-h3-zEF"/>
+                            <constraint firstItem="lPy-ml-GDt" firstAttribute="centerX" secondItem="nWT-JH-rF3" secondAttribute="centerX" id="e0Z-OZ-nnw"/>
                             <constraint firstItem="yRb-gh-pCe" firstAttribute="top" secondItem="rqm-f0-YKW" secondAttribute="bottom" constant="8" symbolic="YES" id="ly1-5L-XZq"/>
                             <constraint firstItem="nWT-JH-rF3" firstAttribute="top" secondItem="PCn-2V-VWr" secondAttribute="top" constant="207" id="qsD-zD-Ql2"/>
                             <constraint firstItem="rqm-f0-YKW" firstAttribute="top" secondItem="PCn-2V-VWr" secondAttribute="top" constant="272" id="su7-xC-CI5"/>
+                            <constraint firstItem="nWT-JH-rF3" firstAttribute="top" secondItem="lPy-ml-GDt" secondAttribute="bottom" constant="8" symbolic="YES" id="wJQ-p9-yuO"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="winCrownImageView" destination="lPy-ml-GDt" id="7fo-lH-okP"/>
                         <outlet property="winImageView" destination="rqm-f0-YKW" id="pKK-GX-gyB"/>
                     </connections>
                 </viewController>

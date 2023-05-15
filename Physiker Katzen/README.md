@@ -28,7 +28,6 @@ für haptisches Feedback von KaneCheshire.
 
 ## Todo
 
-- Anzeige des kompletten Bild bei Gewinn
 
 ## Autor
 

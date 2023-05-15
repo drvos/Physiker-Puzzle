@@ -9,8 +9,12 @@ import UIKit
 
 class WinViewController: UIViewController {
    
+   @IBOutlet weak var winImageView: UIImageView!
+   
    override func viewDidLoad() {
       super.viewDidLoad()
+      
+      self.winImageView.image = UIImage(named: "PuzzlePicture")
       
    }
 }

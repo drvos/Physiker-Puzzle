@@ -12,6 +12,8 @@
 		9C2C32412A10134A00D09109 /* ConfigurationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C32402A10134A00D09109 /* ConfigurationTableViewController.swift */; };
 		9C2C32432A10B84700D09109 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2C32422A10B84700D09109 /* Settings.swift */; };
 		9CCFA6642A114F6000255ECB /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCFA6632A114F6000255ECB /* HapticGenerator.swift */; };
+		9CCFA6662A11748900255ECB /* WinTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCFA6652A11748900255ECB /* WinTableViewController.swift */; };
+		9CCFA6682A1178C800255ECB /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCFA6672A1178C800255ECB /* WinViewController.swift */; };
 		9CF49F142A0F73E900B9627E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF49F132A0F73E900B9627E /* AppDelegate.swift */; };
 		9CF49F162A0F73E900B9627E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF49F152A0F73E900B9627E /* SceneDelegate.swift */; };
 		9CF49F182A0F73E900B9627E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF49F172A0F73E900B9627E /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 		9C2C32402A10134A00D09109 /* ConfigurationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTableViewController.swift; sourceTree = "<group>"; };
 		9C2C32422A10B84700D09109 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		9CCFA6632A114F6000255ECB /* HapticGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
+		9CCFA6652A11748900255ECB /* WinTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinTableViewController.swift; sourceTree = "<group>"; };
+		9CCFA6672A1178C800255ECB /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
 		9CF49F102A0F73E900B9627E /* Physiker Katzen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Physiker Katzen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF49F132A0F73E900B9627E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF49F152A0F73E900B9627E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,9 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				9CF49F172A0F73E900B9627E /* ViewController.swift */,
-				9C2C323E2A100D6400D09109 /* ConfigurationViewController.swift */,
 				9C2C323A2A0FA21200D09109 /* GameInfoTableViewController.swift */,
+				9C2C323E2A100D6400D09109 /* ConfigurationViewController.swift */,
 				9C2C32402A10134A00D09109 /* ConfigurationTableViewController.swift */,
+				9CCFA6672A1178C800255ECB /* WinViewController.swift */,
+				9CCFA6652A11748900255ECB /* WinTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -189,9 +195,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CF49F2E2A0F798D00B9627E /* PuzzleLevel.swift in Sources */,
+				9CCFA6682A1178C800255ECB /* WinViewController.swift in Sources */,
 				9C2C323F2A100D6400D09109 /* ConfigurationViewController.swift in Sources */,
 				9C2C323B2A0FA21200D09109 /* GameInfoTableViewController.swift in Sources */,
 				9CCFA6642A114F6000255ECB /* HapticGenerator.swift in Sources */,
+				9CCFA6662A11748900255ECB /* WinTableViewController.swift in Sources */,
 				9C2C32412A10134A00D09109 /* ConfigurationTableViewController.swift in Sources */,
 				9C2C32432A10B84700D09109 /* Settings.swift in Sources */,
 				9CF49F182A0F73E900B9627E /* ViewController.swift in Sources */,

@@ -8,13 +8,17 @@
 import UIKit
 
 class WinTableViewController: UITableViewController {
-   
+     
    @IBOutlet weak var winMovesLabel: UILabel!
    @IBOutlet weak var winTimeLabel: UILabel!
    
+   let gameinfo = Gameinfo.shared
+   
    override func viewDidLoad() {
       super.viewDidLoad()
-      
+
+      winMovesLabel.text = String(format: "%d", gameinfo.moves)
+      winTimeLabel.text = gameinfo.secondsFormatted()
    }
    
 }

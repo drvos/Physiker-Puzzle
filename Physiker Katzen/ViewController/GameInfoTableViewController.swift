@@ -6,28 +6,32 @@
 //
 
 import UIKit
-   
-class GameInfoTableViewController: UITableViewController {
+
+class GameInfoTableViewController: UITableViewController, GameinfoDelegate {
    
    @IBOutlet weak var movesLabel: UILabel!
    @IBOutlet weak var timeLabel: UILabel!
    
-   var secCount: Int = 0
+   let gameinfo = Gameinfo.shared
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      self.resetTime()
-      self.resetCount()
+      gameinfo.delegate = self
    }
    
-   func resetCount() {
-      secCount = 0
-      movesLabel.text = String(format: "%d", secCount)
+   // MARK: - GameinfoDelegate
+   
+   func gameinfoMovesChanged(moves: Int) {
+      print("gameinfoMoves: \(moves)")
+      movesLabel.text = String(format: "%d", gameinfo.moves)
    }
    
-   func resetTime() {
-      timeLabel.text = "0:00:00"
+   func gameinfoSecondsChanged(seconds: Int) {
+      print("gameinfoSeconds: \(seconds)")
+      timeLabel.text = gameinfo.secondsFormatted()
    }
    
+   func gameinfoReset() {
+   }
 }

@@ -19,7 +19,7 @@ class Settings {
    }
    
    // zu Debugzwecken hier .veryEasy einstellen, sonst .normal
-   static let shared: Settings = { return Settings(level: .veryEasy) }()
+   static let shared: Settings = { return Settings(level: .normal) }()
    
    var delegate: SettingsDelegate?
    

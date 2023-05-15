@@ -13,23 +13,27 @@ protocol SettingsDelegate {
 
 class Settings {
    
-   private init(level: PuzzleLevel = .normal) {
+   private init(level: PuzzleLevel) {
       self.puzzleLevel = level
       self.puzzleSwapAnimationDuration = 0.2
    }
    
-   static let shared: Settings = { return Settings(level: .normal) }()
+   // zu Debugzwecken hier .veryEasy einstellen, sonst .normal
+   static let shared: Settings = { return Settings(level: .veryEasy) }()
    
    var delegate: SettingsDelegate?
    
    // PuzzleLevel as PuzzleLevel (easy, normal, hard
    var puzzleLevel: PuzzleLevel {
       didSet {
-         print("PuzzleLevel: \(puzzleLevel)")
-         delegate?.puzzleLevelSettingChanged(level: puzzleLevel)
+         print("PuzzleLevel: \(self.puzzleLevel)")
+         delegate?.puzzleLevelSettingChanged(level: self.puzzleLevel)
       }
    }
+   
    var puzzleSwapAnimationDuration: Double
+   
+   // MARK: -
    
    func puzzleLevelAsSegmentIndex() -> Int {
       // To use in SegmentControl

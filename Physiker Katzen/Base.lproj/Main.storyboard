@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRb-gh-pCe">
-                                <rect key="frame" x="16" y="520" width="361" height="292"/>
+                                <rect key="frame" x="16" y="530" width="361" height="292"/>
                                 <connections>
                                     <segue destination="fwz-cd-HMH" kind="embed" id="InI-Th-khW"/>
                                 </connections>
@@ -85,37 +85,8 @@
                         <sections>
                             <tableViewSection headerTitle="Ergebnis" id="yVv-IE-wVj">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="IDf-gB-Z51" detailTextLabel="AoY-BT-vMh" imageView="ot5-nJ-7ER" style="IBUITableViewCellStyleValue1" id="1QZ-l9-8Kd">
-                                        <rect key="frame" x="0.0" y="55.333332061767578" width="361" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1QZ-l9-8Kd" id="hA4-HK-k2w">
-                                            <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Benötigte Zeit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IDf-gB-Z51">
-                                                    <rect key="frame" x="59" y="18" width="80" height="14.333333333333334"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="0:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AoY-BT-vMh">
-                                                    <rect key="frame" x="270.33333333333331" y="10" width="70.666666666666671" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ot5-nJ-7ER">
-                                                    <rect key="frame" x="21.166666666666664" y="12.333333333333336" width="21.666666666666668" height="19"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <imageReference key="image" image="clock.arrow.circlepath" catalog="system" symbolScale="default" variableValue="0.80000000000000004"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="hxe-OS-zXd" detailTextLabel="6z5-v2-ukJ" imageView="nUS-mS-ANm" style="IBUITableViewCellStyleValue1" id="deo-8k-EgU">
-                                        <rect key="frame" x="0.0" y="99" width="361" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="55.333332061767578" width="361" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="deo-8k-EgU" id="pnO-ic-4zQ">
                                             <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
@@ -139,6 +110,35 @@
                                                     <rect key="frame" x="21.333333333333336" y="12.333333333333334" width="21.333333333333332" height="17.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <imageReference key="image" image="move.3d" catalog="system" symbolScale="default"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="IDf-gB-Z51" detailTextLabel="AoY-BT-vMh" imageView="ot5-nJ-7ER" style="IBUITableViewCellStyleValue1" id="1QZ-l9-8Kd">
+                                        <rect key="frame" x="0.0" y="99" width="361" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1QZ-l9-8Kd" id="hA4-HK-k2w">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Benötigte Zeit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IDf-gB-Z51">
+                                                    <rect key="frame" x="59" y="18" width="80" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="0:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AoY-BT-vMh">
+                                                    <rect key="frame" x="270.33333333333331" y="10" width="70.666666666666671" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ot5-nJ-7ER">
+                                                    <rect key="frame" x="21.166666666666664" y="12.333333333333336" width="21.666666666666668" height="19"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <imageReference key="image" image="clock.arrow.circlepath" catalog="system" symbolScale="default" variableValue="0.80000000000000004"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>

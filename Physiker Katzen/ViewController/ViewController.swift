@@ -62,5 +62,6 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
       // DONE: Spiel stoppen und neu starten
       gameinfos.stop()
       gameinfos.reset()
+      self.startPuzzle()
    }
 }

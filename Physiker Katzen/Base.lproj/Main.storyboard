@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRb-gh-pCe">
-                                <rect key="frame" x="16" y="530" width="361" height="292"/>
+                                <rect key="frame" x="16" y="520" width="361" height="292"/>
                                 <connections>
                                     <segue destination="fwz-cd-HMH" kind="embed" id="InI-Th-khW"/>
                                 </connections>
@@ -176,9 +176,11 @@
                                     <constraint firstAttribute="width" secondItem="Ndz-XQ-0EU" secondAttribute="height" multiplier="1:1" id="wTs-re-rox"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Einstein, Schrödinger und Marie Curie" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8d-Sx-PI7">
-                                <rect key="frame" x="8" y="101" width="376" height="80"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8d-Sx-PI7">
+                                <rect key="frame" x="8" y="101" width="377" height="80"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Einstein, Schrödinger und
+Marie Curie</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -197,10 +199,14 @@
                             <constraint firstItem="N0I-Kg-FJN" firstAttribute="trailing" secondItem="Ndz-XQ-0EU" secondAttribute="trailing" id="A5Z-rA-sGn"/>
                             <constraint firstAttribute="trailing" secondItem="N0I-Kg-FJN" secondAttribute="trailing" id="Crx-hd-v5P"/>
                             <constraint firstAttribute="bottom" secondItem="N0I-Kg-FJN" secondAttribute="bottom" constant="481" id="Fxe-wK-Vh6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x8d-Sx-PI7" secondAttribute="trailing" constant="8" id="JZS-q8-wb3"/>
                             <constraint firstItem="N0I-Kg-FJN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="189" id="Lwk-fC-suW"/>
+                            <constraint firstItem="x8d-Sx-PI7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="PKn-eN-ESj"/>
                             <constraint firstItem="N0I-Kg-FJN" firstAttribute="leading" secondItem="Ndz-XQ-0EU" secondAttribute="leading" id="Trr-Sd-23F"/>
                             <constraint firstItem="x8d-Sx-PI7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="U6P-jb-48b"/>
+                            <constraint firstItem="x8d-Sx-PI7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-2" id="lAb-Vn-P3C"/>
                             <constraint firstItem="N0I-Kg-FJN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qvc-er-hM9"/>
+                            <constraint firstItem="N0I-Kg-FJN" firstAttribute="top" secondItem="x8d-Sx-PI7" secondAttribute="bottom" constant="8" id="tMS-JH-ZMn"/>
                             <constraint firstItem="Ndz-XQ-0EU" firstAttribute="top" secondItem="N0I-Kg-FJN" secondAttribute="bottom" constant="8" symbolic="YES" id="zkL-ZR-DhE"/>
                         </constraints>
                     </view>

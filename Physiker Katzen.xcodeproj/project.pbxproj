@@ -24,6 +24,8 @@
 		9CF49F2D2A0F798D00B9627E /* SlidingPuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF49F2A2A0F798D00B9627E /* SlidingPuzzleView.swift */; };
 		9CF49F2E2A0F798D00B9627E /* PuzzleLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF49F2B2A0F798D00B9627E /* PuzzleLevel.swift */; };
 		9CF5A8202A12AC3E0091DC23 /* Gameinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5A81F2A12AC3E0091DC23 /* Gameinfo.swift */; };
+		9CF5A8272A13FEAB0091DC23 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5A8262A13FEAB0091DC23 /* AboutTableViewController.swift */; };
+		9CF5A8292A14004B0091DC23 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5A8282A14004B0091DC23 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		9CF49F2A2A0F798D00B9627E /* SlidingPuzzleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingPuzzleView.swift; sourceTree = "<group>"; };
 		9CF49F2B2A0F798D00B9627E /* PuzzleLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleLevel.swift; sourceTree = "<group>"; };
 		9CF5A81F2A12AC3E0091DC23 /* Gameinfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameinfo.swift; sourceTree = "<group>"; };
+		9CF5A8262A13FEAB0091DC23 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutTableViewController.swift; path = "Physiker Katzen/ViewController/AboutTableViewController.swift"; sourceTree = SOURCE_ROOT; };
+		9CF5A8282A14004B0091DC23 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				9C2C32402A10134A00D09109 /* ConfigurationTableViewController.swift */,
 				9CCFA6672A1178C800255ECB /* WinViewController.swift */,
 				9CCFA6652A11748900255ECB /* WinTableViewController.swift */,
+				9CF5A8282A14004B0091DC23 /* AboutViewController.swift */,
+				9CF5A8262A13FEAB0091DC23 /* AboutTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -208,8 +214,10 @@
 				9C2C32432A10B84700D09109 /* Settings.swift in Sources */,
 				9CF49F182A0F73E900B9627E /* ViewController.swift in Sources */,
 				9CF49F2C2A0F798D00B9627E /* MovingDirection.swift in Sources */,
+				9CF5A8272A13FEAB0091DC23 /* AboutTableViewController.swift in Sources */,
 				9CF49F142A0F73E900B9627E /* AppDelegate.swift in Sources */,
 				9CF49F162A0F73E900B9627E /* SceneDelegate.swift in Sources */,
+				9CF5A8292A14004B0091DC23 /* AboutViewController.swift in Sources */,
 				9CF49F2D2A0F798D00B9627E /* SlidingPuzzleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,7 +30,7 @@ class AboutTableViewController: UITableViewController {
       
    }
    @IBAction func appStoreRatingTouchUpInside(_ sender: UIButton) {
-      let openAppStoreForRating = String(format: "itms-apps://itunes.apple.com/de/app/id%d", 1562686208)
+      let openAppStoreForRating = String(format: "itms-apps://itunes.apple.com/de/app/id%d", 6449164376)
       if (UIApplication.shared.canOpenURL(URL(string: openAppStoreForRating)!)) {
          UIApplication.shared.open(URL(string: openAppStoreForRating)!)
       } else {

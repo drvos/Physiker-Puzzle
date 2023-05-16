@@ -24,10 +24,18 @@ class AboutTableViewController: UITableViewController {
       print(String(format: "Build %@", Bundle.main.buildNumber))
       
       appNameLabel.text = Bundle.main.appName
-      appVersionLabel.text = String(format: "Version %@ (%d)", Bundle.main.versionNumber, Bundle.main.buildNumber)
+      appVersionLabel.text = String(format: "Version %@ (%@)", Bundle.main.versionNumber, Bundle.main.buildNumber)
       appDeveloperLabel.text = "Entwickelt von Volker Schering, 2023"
       appIconImageView.image = UIImage(named: "AppIcon")
       
+   }
+   @IBAction func appStoreRatingTouchUpInside(_ sender: UIButton) {
+      let openAppStoreForRating = String(format: "itms-apps://itunes.apple.com/de/app/id%d", 1562686208)
+      if (UIApplication.shared.canOpenURL(URL(string: openAppStoreForRating)!)) {
+         UIApplication.shared.open(URL(string: openAppStoreForRating)!)
+      } else {
+         print("Cannot open AppStore")
+      }
    }
    
 }

@@ -545,6 +545,9 @@ Marie Curie</string>
                                                     <state key="normal" title="Bewertung abgeben">
                                                         <color key="titleColor" systemColor="labelColor"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="appStoreRatingTouchUpInside:" destination="dvo-7q-1Qu" eventType="touchUpInside" id="1OF-1f-ivn"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>

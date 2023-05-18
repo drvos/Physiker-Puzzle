@@ -37,6 +37,7 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
    
    func startPuzzle() {
       puzzleView.level = settings.puzzleLevel
+      gameinfos.level = (settings.puzzleLevel).rawValue
       puzzleView.swapAnimationDuration = settings.puzzleSwapAnimationDuration
       
       puzzleView.startPuzzle()

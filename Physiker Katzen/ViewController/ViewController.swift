@@ -5,7 +5,10 @@
 //  Created by Volker Schering on 13.05.23.
 //
 
+import os
 import UIKit
+
+let logger = Logger(subsystem: Bundle.main.bundleIdentifier!, category: "Physiker-Puzzle")
 
 class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
 
@@ -18,10 +21,10 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      print(String(format: "Name %@", Bundle.main.appName))
-      print(String(format: "Bundle %@", Bundle.main.bundleId))
-      print(String(format: "Version %@", Bundle.main.versionNumber))
-      print(String(format: "Build %@", Bundle.main.buildNumber))
+      logger.debug("Name: \(Bundle.main.appName)")
+      logger.debug("Bundle: \(Bundle.main.bundleId)")
+      logger.debug("Version: \(Bundle.main.versionNumber)")
+      logger.debug("Build: \(Bundle.main.buildNumber)")
       
       puzzleView.delegate = self
       settings.delegate = self
@@ -36,6 +39,7 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
    }
    
    func startPuzzle() {
+      logger.debug("startPuzzle")
       puzzleView.level = settings.puzzleLevel
       gameinfos.level = (settings.puzzleLevel).rawValue
       puzzleView.swapAnimationDuration = settings.puzzleSwapAnimationDuration
@@ -51,7 +55,7 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
    // MARK: - PuzzleDelegate
    
    func puzzleComplete(view: SlidingPuzzleView) {
-      print("PuzzleComplete: Hurray")
+      logger.debug("PuzzleComplete: Hurray")
       Haptic.success.generate()
       self.performSegue(withIdentifier: "winSegue", sender: self)
       gameinfos.stop()
@@ -59,14 +63,14 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
    }
    
    func puzzleSwapCount(view: SlidingPuzzleView, count: Int) {
-      print("PuzzleSwapCountIs: \(count)")
+      logger.debug("PuzzleSwapCount: \(count)")
       gameinfos.moves = count
    }
    
    // MARK: - SettingsDelegate
    
    func puzzleLevelSettingChanged(level: PuzzleLevel) {
-      print("PuzzleLevelSettingChanged \(level)")
+      logger.debug("PuzzleLevelSettingChanged \(level)")
       // DONE: Spiel stoppen und neu starten
       gameinfos.stop()
       gameinfos.reset()

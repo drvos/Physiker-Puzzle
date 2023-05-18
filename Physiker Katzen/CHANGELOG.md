@@ -1,5 +1,6 @@
 #  Changelog
 
+[ ] new: Sharebutton in AboutScreen
 Version 0.6
 [x] new: Anzeige Schwierigkeitsgrad im WinView
 [x] fix: FontSize Storyboard 

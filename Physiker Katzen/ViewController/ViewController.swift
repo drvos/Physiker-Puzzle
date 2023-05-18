@@ -70,7 +70,7 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
    // MARK: - SettingsDelegate
    
    func puzzleLevelSettingChanged(level: PuzzleLevel) {
-      logger.debug("PuzzleLevelSettingChanged \(level)")
+      logger.debug("PuzzleLevelSettingChanged to \(level.hashValue)")
       // DONE: Spiel stoppen und neu starten
       gameinfos.stop()
       gameinfos.reset()

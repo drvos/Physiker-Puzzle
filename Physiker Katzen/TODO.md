@@ -1,7 +1,11 @@
 #  TODO
 
-[ ] new: Anzeige Schwierigkeitsgrad im WinView
+Version 0.6
+[x] new: Anzeige Schwierigkeitsgrad im WinView
 [x] fix: FontSize Storyboard 
+Version 0.5
+[x] new: Ansicht Über die App
+[x] new: Appstore Bewertung
 Version 0.4
 [x] new: Vibration bei Zug und Gewinn
 [x] new: Anzeige des kompletten Bild bei Gewinn

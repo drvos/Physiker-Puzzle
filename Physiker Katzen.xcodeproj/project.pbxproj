@@ -37,6 +37,7 @@
 		9CCFA6632A114F6000255ECB /* HapticGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
 		9CCFA6652A11748900255ECB /* WinTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinTableViewController.swift; sourceTree = "<group>"; };
 		9CCFA6672A1178C800255ECB /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
+		9CE534032A160C6600E8E6FF /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
 		9CF49F102A0F73E900B9627E /* Physiker Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Physiker Puzzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF49F132A0F73E900B9627E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF49F152A0F73E900B9627E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 				9CF49F1E2A0F73EB00B9627E /* LaunchScreen.storyboard */,
 				9CF49F212A0F73EB00B9627E /* Info.plist */,
 				9C2C323D2A1005C800D09109 /* README.md */,
+				9CE534032A160C6600E8E6FF /* TODO.md */,
 			);
 			path = "Physiker Katzen";
 			sourceTree = "<group>";

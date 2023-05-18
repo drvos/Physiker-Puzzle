@@ -26,9 +26,6 @@ Die Vorlage und große Teile der App stammen von kokonak und seiner
 Der [HapticGenerator](https://github.com/KaneCheshire/HapticGenerator) 
 für haptisches Feedback von KaneCheshire.
 
-## Todo
-
-
 ## Autor
 
 Volker Schering, <a src="mailto:mail@volker-schering.de">mail@volker-schering.de</a>

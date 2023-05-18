@@ -5,31 +5,29 @@
 //  Created by Volker Schering on 13.05.23.
 //
 
-import os
 import UIKit
-
-let logger = Logger(subsystem: Bundle.main.bundleIdentifier!, category: "Physiker-Puzzle")
 
 class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
 
    @IBOutlet weak var appTitle: UINavigationItem!
    @IBOutlet weak var puzzleView: SlidingPuzzleView!
    
+   let app = App.shared
    let settings = Settings.shared
    let gameinfos = Gameinfo.shared
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      logger.debug("Name: \(Bundle.main.appName)")
-      logger.debug("Bundle: \(Bundle.main.bundleId)")
-      logger.debug("Version: \(Bundle.main.versionNumber)")
-      logger.debug("Build: \(Bundle.main.buildNumber)")
+      logger.debug("Name: \(self.app.Name)")
+      logger.debug("Bundle: \(self.app.BundleId)")
+      logger.debug("Version: \(self.app.VersionNumber)")
+      logger.debug("Build: \(self.app.BuildNumber)")
       
       puzzleView.delegate = self
       settings.delegate = self
       
-      navigationItem.title = Bundle.main.appName
+      navigationItem.title = self.app.Name
       navigationItem.rightBarButtonItem =
       UIBarButtonItem(image: UIImage(systemName: "gearshape"), style: .plain,
                       target: self, action: #selector(prefsTapped))
@@ -76,26 +74,4 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
       gameinfos.reset()
       self.startPuzzle()
    }
-}
-
-// MARK: - Extension Bundle
-
-extension Bundle {
-
-    var appName: String {
-        return infoDictionary?["CFBundleName"] as! String
-    }
-
-    var bundleId: String {
-        return bundleIdentifier!
-    }
-
-    var versionNumber: String {
-        return infoDictionary?["CFBundleShortVersionString"] as! String
-    }
-
-    var buildNumber: String {
-        return infoDictionary?["CFBundleVersion"] as! String
-    }
-
 }

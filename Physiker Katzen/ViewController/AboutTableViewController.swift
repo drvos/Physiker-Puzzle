@@ -11,21 +11,26 @@ class AboutTableViewController: UITableViewController {
    
    @IBOutlet weak var appDeveloperLabel: UILabel!
    @IBOutlet weak var appStoreRatingButton: UIButton!
+   @IBOutlet weak var shareButton: UIButton!
+   
+   let app = App.shared
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      appDeveloperLabel.text = "Entwickelt von Volker Schering, 2023"
+      appDeveloperLabel.text = String(format: "%@, 2023", app.Developer)
       
    }
-   @IBAction func appStoreRatingTouchUpInside(_ sender: UIButton) {
-      let openAppStoreForRatingUrl = String(format: "itms-apps://itunes.apple.com/de/app/id%d", 6449164376)
-      logger.trace("\(openAppStoreForRatingUrl)")
-      if (UIApplication.shared.canOpenURL(URL(string: openAppStoreForRatingUrl)!)) {
-         UIApplication.shared.open(URL(string: openAppStoreForRatingUrl)!)
-      } else {
-         logger.warning("Cannot open AppStore")
-      }
+   
+   // MARK: - IBActions
+   
+   @IBAction func appStoreRatingTapped(_ sender: UIButton) {
+      logger.debug("Function appStoreRatingTapped")
+      app.openAppStoreForRating()
+   }
+   @IBAction func shareButtonTapped(_ sender: UIButton) {
+      logger.debug("Function shareButtonTapped")
+      app.openShareSheet(sender: self)
    }
    
 }

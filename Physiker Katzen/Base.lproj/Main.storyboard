@@ -482,7 +482,7 @@ Marie Curie</string>
                                                 <action selector="aboutCloseTapped:" destination="Tpz-Rw-hGn" id="3MQ-CS-tmm"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="2XL-Qi-qmt">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="2XL-Qi-qmt">
                                             <connections>
                                                 <action selector="aboutShareTapped:" destination="Tpz-Rw-hGn" id="fAE-SC-kzg"/>
                                             </connections>
@@ -551,7 +551,7 @@ Marie Curie</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
-                            <tableViewSection id="hs1-un-bay">
+                            <tableViewSection headerTitle="Entwickler" id="hs1-un-bay">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qoc-Fv-HAJ">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
@@ -560,7 +560,7 @@ Marie Curie</string>
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="appDeveloper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iIX-cT-yg1">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="appDeveloper" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" id="iIX-cT-yg1">
                                                     <rect key="frame" x="20" y="-1" width="353" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
@@ -570,14 +570,18 @@ Marie Curie</string>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="TLu-vx-fnI">
-                                        <rect key="frame" x="0.0" y="93.666667938232422" width="393" height="43.333332061767578"/>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="CWj-ID-XXz">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hAR-er-iYg">
+                                        <rect key="frame" x="0.0" y="171.66666793823242" width="393" height="43.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TLu-vx-fnI" id="S7l-b8-6uK">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hAR-er-iYg" id="jKR-4i-LSu">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.333332061767578"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOj-Ar-wlv">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuq-Ve-r02">
                                                     <rect key="frame" x="20" y="5" width="373" height="33.333333333333336"/>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -585,15 +589,42 @@ Marie Curie</string>
                                                         <color key="titleColor" systemColor="labelColor"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="appStoreRatingTouchUpInside:" destination="dvo-7q-1Qu" eventType="touchUpInside" id="ZcA-SN-AnV"/>
+                                                        <action selector="appStoreRatingTapped:" destination="dvo-7q-1Qu" eventType="touchUpInside" id="oJA-g2-h5d"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="kOj-Ar-wlv" firstAttribute="leading" secondItem="S7l-b8-6uK" secondAttribute="leading" constant="20" id="QRK-Uh-vV9"/>
-                                                <constraint firstAttribute="trailing" secondItem="kOj-Ar-wlv" secondAttribute="trailing" id="iQg-fk-7Kl"/>
-                                                <constraint firstItem="kOj-Ar-wlv" firstAttribute="top" secondItem="S7l-b8-6uK" secondAttribute="top" constant="5" id="kCe-mC-29r"/>
-                                                <constraint firstAttribute="bottom" secondItem="kOj-Ar-wlv" secondAttribute="bottom" constant="5" id="xwQ-Ce-jdI"/>
+                                                <constraint firstAttribute="trailing" secondItem="Fuq-Ve-r02" secondAttribute="trailing" id="Nbk-Xl-Sbe"/>
+                                                <constraint firstItem="Fuq-Ve-r02" firstAttribute="top" secondItem="jKR-4i-LSu" secondAttribute="top" constant="5" id="jBX-Gk-OMA"/>
+                                                <constraint firstAttribute="bottom" secondItem="Fuq-Ve-r02" secondAttribute="bottom" constant="5" id="nge-dm-P6m"/>
+                                                <constraint firstItem="Fuq-Ve-r02" firstAttribute="leading" secondItem="jKR-4i-LSu" secondAttribute="leading" constant="20" id="qiX-WW-8xi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Oib-u3-vnc">
+                                        <rect key="frame" x="0.0" y="215" width="393" height="43.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oib-u3-vnc" id="AiS-q7-1cv">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUH-dc-p5g">
+                                                    <rect key="frame" x="20" y="5" width="373" height="33.333333333333336"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Mit Freunden teilen">
+                                                        <color key="titleColor" systemColor="labelColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="shareButtonTapped:" destination="dvo-7q-1Qu" eventType="touchUpInside" id="cNA-FN-RTO"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rUH-dc-p5g" firstAttribute="top" secondItem="AiS-q7-1cv" secondAttribute="top" constant="5" id="8YH-wG-2mV"/>
+                                                <constraint firstItem="rUH-dc-p5g" firstAttribute="leading" secondItem="AiS-q7-1cv" secondAttribute="leading" constant="20" id="TZy-ym-hDg"/>
+                                                <constraint firstAttribute="bottom" secondItem="rUH-dc-p5g" secondAttribute="bottom" constant="5" id="aul-Dv-j88"/>
+                                                <constraint firstAttribute="trailing" secondItem="rUH-dc-p5g" secondAttribute="trailing" id="fip-Ur-PLP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

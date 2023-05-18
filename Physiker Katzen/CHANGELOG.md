@@ -1,5 +1,6 @@
 #  Changelog
 
+[x] Umbau Logging
 [ ] new: Sharebutton in AboutScreen
 Version 0.6
 [x] new: Anzeige Schwierigkeitsgrad im WinView

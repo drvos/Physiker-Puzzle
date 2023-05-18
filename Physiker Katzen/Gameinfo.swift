@@ -28,28 +28,28 @@ class Gameinfo {
    
    var moves: Int {
       didSet {
-         print("Moves: \(moves)")
-         if (moves == 1) {
+         logger.debug("Moves: \(self.moves)")
+         if (self.moves == 1) {
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(oneSecTimer), userInfo: nil, repeats: true)
          }
-         delegate?.gameinfoMovesChanged(moves: moves)
+         delegate?.gameinfoMovesChanged(moves: self.moves)
       }
    }
    var seconds: Int {
       didSet {
-         print("Seconds: \(seconds)")
-         delegate?.gameinfoSecondsChanged(seconds: seconds)
+         logger.debug("Seconds: \(self.seconds)")
+         delegate?.gameinfoSecondsChanged(seconds: self.seconds)
       }
    }
    var level: Int {
       didSet {
-         print("Level: \(level)")
+         logger.debug("Level: \(self.level)")
       }
    }
    
    @objc private func oneSecTimer() {
-      print("OneSecTimer fired")
-      seconds += 1
+      logger.trace("OneSecTimer fired")
+      self.seconds += 1
    }
 
    // MARK: -
@@ -59,9 +59,9 @@ class Gameinfo {
    }
    
    func reset() {
-      level = 0
-      moves = 0
-      seconds = 0
+      self.level = 0
+      self.moves = 0
+      self.seconds = 0
       delegate?.gameinfoReset()
    }
    
@@ -69,7 +69,7 @@ class Gameinfo {
    
    func secondsFormatted() -> String {
       // "0:00:02"
-      return Duration.seconds(seconds).formatted()
+      return Duration.seconds(self.seconds).formatted()
    }
    
    func levelFormatted() -> String {

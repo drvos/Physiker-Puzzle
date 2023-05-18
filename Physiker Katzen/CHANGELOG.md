@@ -3,6 +3,7 @@
 Version 0.6
 [x] new: Anzeige Schwierigkeitsgrad im WinView
 [x] fix: FontSize Storyboard 
+[x] new: Appname "Physiker Puzzle"
 Version 0.5
 [x] new: Ansicht Über die App
 [x] new: Appstore Bewertung

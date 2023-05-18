@@ -23,17 +23,21 @@ class ConfigurationTableViewController: UITableViewController {
    @IBAction func segmentPuzzleLevel(_ sender: UISegmentedControl) {
       let segmentIndex = Int(puzzleLevelSegment.selectedSegmentIndex)
       
-      print("SegmentPuzzleLevel: \(segmentIndex)")
+      logger.debug("SegmentPuzzleLevel: \(segmentIndex)")
       
       switch (puzzleLevelSegment.selectedSegmentIndex) {
          case 0: // einfach
             settings.puzzleLevel = .easy
-         case 1: // normal
+            logger.trace("puzzleLevel: .easy")
+         case 1: // normalÇ
             settings.puzzleLevel = .normal
+            logger.trace("puzzleLevel: .normal")
          case 2: // schwer
             settings.puzzleLevel = .hard
+            logger.trace("puzzleLevel: .hard")
          default:
             settings.puzzleLevel = .veryEasy
+            logger.trace("puzzleLevel: .veryEasy")
       }
       puzzleLevelLabel.text = String(format: "%d Teile", settings.countPieces())
    }

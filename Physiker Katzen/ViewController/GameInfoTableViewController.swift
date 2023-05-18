@@ -23,12 +23,12 @@ class GameInfoTableViewController: UITableViewController, GameinfoDelegate {
    // MARK: - GameinfoDelegate
    
    func gameinfoMovesChanged(moves: Int) {
-      print("gameinfoMoves: \(moves)")
+      logger.debug("gameinfoMoves: \(moves)")
       movesLabel.text = String(format: "%d", gameinfo.moves)
    }
    
    func gameinfoSecondsChanged(seconds: Int) {
-      print("gameinfoSeconds: \(seconds)")
+      logger.debug("gameinfoSeconds: \(seconds)")
       timeLabel.text = gameinfo.secondsFormatted()
    }
    

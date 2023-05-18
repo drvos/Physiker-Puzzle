@@ -37,7 +37,7 @@
 		9CCFA6632A114F6000255ECB /* HapticGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
 		9CCFA6652A11748900255ECB /* WinTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinTableViewController.swift; sourceTree = "<group>"; };
 		9CCFA6672A1178C800255ECB /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
-		9CF49F102A0F73E900B9627E /* Physiker Katzen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Physiker Katzen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF49F102A0F73E900B9627E /* Physiker Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Physiker Puzzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF49F132A0F73E900B9627E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF49F152A0F73E900B9627E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9CF49F172A0F73E900B9627E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		9CF49F112A0F73E900B9627E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CF49F102A0F73E900B9627E /* Physiker Katzen.app */,
+				9CF49F102A0F73E900B9627E /* Physiker Puzzle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 			);
 			name = "Physiker Katzen";
 			productName = "tre fysiker katte";
-			productReference = 9CF49F102A0F73E900B9627E /* Physiker Katzen.app */;
+			productReference = 9CF49F102A0F73E900B9627E /* Physiker Puzzle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -368,6 +368,7 @@
 				DEVELOPMENT_TEAM = 244ZF284NG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Physiker Katzen/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Physiker Puzzle";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -381,7 +382,7 @@
 				);
 				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.volker-schering.physiker-katzen";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Physiker Puzzle";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -398,6 +399,7 @@
 				DEVELOPMENT_TEAM = 244ZF284NG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Physiker Katzen/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Physiker Puzzle";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -411,7 +413,7 @@
 				);
 				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.volker-schering.physiker-katzen";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Physiker Puzzle";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

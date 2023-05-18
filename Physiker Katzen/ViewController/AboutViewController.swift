@@ -13,6 +13,8 @@ class AboutViewController: UIViewController {
    @IBOutlet weak var appNameLabel: UILabel!
    @IBOutlet weak var appVersionLabel: UILabel!
    
+   let app = App.shared
+   
    override func viewDidLoad() {
       super.viewDidLoad()
       
@@ -34,11 +36,8 @@ class AboutViewController: UIViewController {
    }
    @IBAction func aboutShareTapped(_ sender: UIBarButtonItem) {
       logger.debug("Function aboutShareTapped")
-      appShare()
+      app.share()
    }
    
-   func appShare() {
-      logger.debug("Function shareApp")
 
-   }
 }

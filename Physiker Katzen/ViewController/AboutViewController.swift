@@ -33,5 +33,12 @@ class AboutViewController: UIViewController {
       self.dismiss(animated: true)
    }
    @IBAction func aboutShareTapped(_ sender: UIBarButtonItem) {
+      logger.debug("Function aboutShareTapped")
+      appShare()
+   }
+   
+   func appShare() {
+      logger.debug("Function shareApp")
+
    }
 }

@@ -5,23 +5,21 @@
 //  Created by Volker Schering on 13.05.23.
 //
 
-import os
 import UIKit
-
-let logger = Logger(subsystem: Bundle.main.bundleIdentifier!, category: "Physiker-Puzzle")
 
 class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
 
    @IBOutlet weak var appTitle: UINavigationItem!
    @IBOutlet weak var puzzleView: SlidingPuzzleView!
    
+   let app = App.shared
    let settings = Settings.shared
    let gameinfos = Gameinfo.shared
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      logger.debug("Name: \(Bundle.main.appName)")
+      logger.debug("Name: \(self.app.name)")
       logger.debug("Bundle: \(Bundle.main.bundleId)")
       logger.debug("Version: \(Bundle.main.versionNumber)")
       logger.debug("Build: \(Bundle.main.buildNumber)")
@@ -82,9 +80,7 @@ class ViewController: UIViewController, PuzzleDelegate, SettingsDelegate {
 
 extension Bundle {
 
-    var appName: String {
-        return infoDictionary?["CFBundleName"] as! String
-    }
+    //var appName: String { return infoDictionary?["CFBundleName"] as! String }
 
     var bundleId: String {
         return bundleIdentifier!
@@ -97,5 +93,5 @@ extension Bundle {
     var buildNumber: String {
         return infoDictionary?["CFBundleVersion"] as! String
     }
-
 }
+

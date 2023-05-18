@@ -1,5 +1,6 @@
 #  Changelog
 
+Version 0.7
 [x] Umbau Logging
 [x] new: Sharebutton in AboutScreen
 Version 0.6

@@ -22,7 +22,7 @@ class WinViewController: UIViewController {
    }
    
    override func viewWillDisappear(_ animated: Bool) {
-      print("WinViewWillDisappear")
+      logger.trace("WinViewController::WinViewWillDisappear")
       gameinfo.reset()
    }
 }

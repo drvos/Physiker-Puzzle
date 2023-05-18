@@ -143,6 +143,35 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="jkp-BX-VaK" detailTextLabel="fp6-NT-bFH" imageView="cnY-oF-8SD" style="IBUITableViewCellStyleValue1" id="jah-l6-PUo">
+                                        <rect key="frame" x="0.0" y="142.66666793823242" width="361" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jah-l6-PUo" id="68p-eH-XtV">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Schwierigkeit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jkp-BX-VaK">
+                                                    <rect key="frame" x="59.000000000000007" y="18" width="75.666666666666671" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Leicht" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fp6-NT-bFH">
+                                                    <rect key="frame" x="287.66666666666669" y="10" width="53.333333333333336" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cnY-oF-8SD">
+                                                    <rect key="frame" x="22.333333333333336" y="12.999999999999998" width="19.333333333333332" height="17.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <imageReference key="image" image="info.square" catalog="system" symbolScale="default" variableValue="0.80000000000000004"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -153,6 +182,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="jlk-n3-Khu"/>
                     <connections>
+                        <outlet property="winLevelLabel" destination="fp6-NT-bFH" id="8Hc-RL-yft"/>
                         <outlet property="winMovesLabel" destination="6z5-v2-ukJ" id="KuM-YR-Ymq"/>
                         <outlet property="winTimeLabel" destination="AoY-BT-vMh" id="dbH-b7-Y6v"/>
                     </connections>
@@ -607,6 +637,7 @@ Marie Curie</string>
         <image name="chevron.down" catalog="system" width="128" height="70"/>
         <image name="clock.arrow.circlepath" catalog="system" width="128" height="112"/>
         <image name="info.circle" catalog="system" width="128" height="123"/>
+        <image name="info.square" catalog="system" width="128" height="114"/>
         <image name="move.3d" catalog="system" width="128" height="106"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

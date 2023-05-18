@@ -16,6 +16,7 @@ protocol GameinfoDelegate {
 class Gameinfo {
    
    private init() {
+      self.level = 0
       self.moves = 0
       self.seconds = 0
    }
@@ -40,6 +41,11 @@ class Gameinfo {
          delegate?.gameinfoSecondsChanged(seconds: seconds)
       }
    }
+   var level: Int {
+      didSet {
+         print("Level: \(level)")
+      }
+   }
    
    @objc private func oneSecTimer() {
       print("OneSecTimer fired")
@@ -53,6 +59,7 @@ class Gameinfo {
    }
    
    func reset() {
+      level = 0
       moves = 0
       seconds = 0
       delegate?.gameinfoReset()
@@ -65,4 +72,19 @@ class Gameinfo {
       return Duration.seconds(seconds).formatted()
    }
    
+   func levelFormatted() -> String {
+      // To show Puzzle Level
+      switch (self.level) {
+         case 2:
+            return "Sehr leicht"
+         case 3:
+            return "Leicht"
+         case 4:
+            return "Normal"
+         case 5:
+            return "Schwer"
+         default:
+            return "Unbekannt"
+      }
+   }
 }

@@ -11,6 +11,7 @@ class WinTableViewController: UITableViewController {
      
    @IBOutlet weak var winMovesLabel: UILabel!
    @IBOutlet weak var winTimeLabel: UILabel!
+   @IBOutlet weak var winLevelLabel: UILabel!
    
    let gameinfo = Gameinfo.shared
    
@@ -19,6 +20,7 @@ class WinTableViewController: UITableViewController {
 
       winMovesLabel.text = String(format: "%d", gameinfo.moves)
       winTimeLabel.text = gameinfo.secondsFormatted()
+      winLevelLabel.text = gameinfo.levelFormatted()
    }
    
 }

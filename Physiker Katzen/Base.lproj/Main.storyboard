@@ -482,7 +482,7 @@ Marie Curie</string>
                                                 <action selector="aboutCloseTapped:" destination="Tpz-Rw-hGn" id="3MQ-CS-tmm"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="2XL-Qi-qmt">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="2XL-Qi-qmt">
                                             <connections>
                                                 <action selector="aboutShareTapped:" destination="Tpz-Rw-hGn" id="fAE-SC-kzg"/>
                                             </connections>

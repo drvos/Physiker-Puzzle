@@ -26,7 +26,7 @@ class Settings {
    // PuzzleLevel as PuzzleLevel (easy, normal, hard
    var puzzleLevel: PuzzleLevel {
       didSet {
-         print("PuzzleLevel: \(self.puzzleLevel)")
+         logger.debug("PuzzleLevel: \(self.puzzleLevel.hashValue)")
          delegate?.puzzleLevelSettingChanged(level: self.puzzleLevel)
       }
    }

@@ -25,17 +25,12 @@ class AboutTableViewController: UITableViewController {
    // MARK: - IBActions
    
    @IBAction func appStoreRatingTapped(_ sender: UIButton) {
-      let openAppStoreForRatingUrl = String(format: "itms-apps://itunes.apple.com/de/app/id%d", 6449164376)
-      logger.trace("\(openAppStoreForRatingUrl)")
-      if (UIApplication.shared.canOpenURL(URL(string: openAppStoreForRatingUrl)!)) {
-         UIApplication.shared.open(URL(string: openAppStoreForRatingUrl)!)
-      } else {
-         logger.warning("Cannot open AppStore")
-      }
+      logger.debug("Function appStoreRatingTapped")
+      app.openAppStoreForRating()
    }
    @IBAction func shareButtonTapped(_ sender: UIButton) {
       logger.debug("Function shareButtonTapped")
-      app.share()
+      app.openShareSheet()
    }
    
 }

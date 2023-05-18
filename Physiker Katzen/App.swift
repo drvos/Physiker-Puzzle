@@ -24,7 +24,7 @@ class App {
    var BuildNumber: String
    
    var AppStoreId: String
-   var AppStoreForRatingUrl: String
+   var AppStoreUrl: String
    
    init() {
       self.Icon = UIImage(named: "AppIcon")!
@@ -34,19 +34,24 @@ class App {
       self.BuildNumber = Bundle.main.buildNumber
       self.Developer = "Volker Schering"
       self.AppStoreId = "6449164376"
-      self.AppStoreForRatingUrl = String(format: "itms-apps://itunes.apple.com/de/app/id%@", self.AppStoreId)
+      self.AppStoreUrl = String(format: "itms-apps://itunes.apple.com/de/app/id%@", self.AppStoreId)
    }
    
    static let shared: App = { return App() }()
    
-   func openShareSheet() {
+   func openShareSheet(sender: UIViewController) {
       logger.debug("Function app.shareSheet")
+      let text = String(format: "Hallo! Hier ist ein Link zum Herunterladen der %@ App", self.Name)
+      let url = NSURL(string: self.AppStoreUrl)
+      let share = [text, url!] as [Any]
+      let vc = UIActivityViewController(activityItems: share, applicationActivities: [])
+      sender.present(vc, animated: true)
    }
    
    func openAppStoreForRating() {
       logger.debug("Function app.appStoreRating")
-      if (UIApplication.shared.canOpenURL(URL(string: self.AppStoreForRatingUrl)!)) {
-         UIApplication.shared.open(URL(string: self.AppStoreForRatingUrl)!)
+      if (UIApplication.shared.canOpenURL(URL(string: self.AppStoreUrl)!)) {
+         UIApplication.shared.open(URL(string: self.AppStoreUrl)!)
       } else {
          logger.warning("Cannot open AppStore")
       }

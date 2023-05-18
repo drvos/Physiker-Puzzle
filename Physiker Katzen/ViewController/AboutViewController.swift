@@ -36,7 +36,7 @@ class AboutViewController: UIViewController {
    }
    @IBAction func aboutShareTapped(_ sender: UIBarButtonItem) {
       logger.debug("Function aboutShareTapped")
-      app.openShareSheet()
+      app.openShareSheet(sender: self)
    }
    
 

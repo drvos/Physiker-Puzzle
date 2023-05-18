@@ -30,7 +30,7 @@ class AboutTableViewController: UITableViewController {
    }
    @IBAction func shareButtonTapped(_ sender: UIButton) {
       logger.debug("Function shareButtonTapped")
-      app.openShareSheet()
+      app.openShareSheet(sender: self)
    }
    
 }

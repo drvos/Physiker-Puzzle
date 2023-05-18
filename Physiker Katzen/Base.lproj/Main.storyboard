@@ -572,7 +572,7 @@ Marie Curie</string>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="App" id="CWj-ID-XXz">
+                            <tableViewSection id="CWj-ID-XXz">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hAR-er-iYg">
                                         <rect key="frame" x="0.0" y="171.66666793823242" width="393" height="43.333332061767578"/>
@@ -585,7 +585,7 @@ Marie Curie</string>
                                                     <rect key="frame" x="20" y="5" width="373" height="33.333333333333336"/>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" title="im Appstore bewerten">
+                                                    <state key="normal" title="Im Appstore bewerten">
                                                         <color key="titleColor" systemColor="labelColor"/>
                                                     </state>
                                                     <connections>
@@ -612,7 +612,7 @@ Marie Curie</string>
                                                     <rect key="frame" x="20" y="5" width="373" height="33.333333333333336"/>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" title="mit Freunden teilen">
+                                                    <state key="normal" title="Mit Freunden teilen">
                                                         <color key="titleColor" systemColor="labelColor"/>
                                                     </state>
                                                     <connections>

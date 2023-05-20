@@ -27,6 +27,8 @@
 		9CF5A8202A12AC3E0091DC23 /* Gameinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5A81F2A12AC3E0091DC23 /* Gameinfo.swift */; };
 		9CF5A8272A13FEAB0091DC23 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5A8262A13FEAB0091DC23 /* AboutTableViewController.swift */; };
 		9CF5A8292A14004B0091DC23 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5A8282A14004B0091DC23 /* AboutViewController.swift */; };
+		9CFA8E502A18D3230040BCC4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E4E2A18D3220040BCC4 /* README.md */; };
+		9CFA8E512A18D3230040BCC4 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E4F2A18D3220040BCC4 /* CHANGELOG.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		9CF5A81F2A12AC3E0091DC23 /* Gameinfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameinfo.swift; sourceTree = "<group>"; };
 		9CF5A8262A13FEAB0091DC23 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutTableViewController.swift; path = "Physiker Katzen/ViewController/AboutTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		9CF5A8282A14004B0091DC23 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		9CFA8E4E2A18D3220040BCC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9CFA8E4F2A18D3220040BCC4 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 				9CF49F192A0F73E900B9627E /* Main.storyboard */,
 				9CF49F1E2A0F73EB00B9627E /* LaunchScreen.storyboard */,
 				9CF49F1C2A0F73EB00B9627E /* Assets.xcassets */,
+				9CFA8E4E2A18D3220040BCC4 /* README.md */,
+				9CFA8E4F2A18D3220040BCC4 /* CHANGELOG.md */,
 				9CF49F212A0F73EB00B9627E /* Info.plist */,
 			);
 			path = "Physiker Katzen";
@@ -192,7 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CF49F202A0F73EB00B9627E /* LaunchScreen.storyboard in Resources */,
+				9CFA8E512A18D3230040BCC4 /* CHANGELOG.md in Resources */,
 				9CF49F1D2A0F73EB00B9627E /* Assets.xcassets in Resources */,
+				9CFA8E502A18D3230040BCC4 /* README.md in Resources */,
 				9CF49F1B2A0F73E900B9627E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +390,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7;
+				MARKETING_VERSION = 0.7.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.volker-schering.physiker-katzen";
 				PRODUCT_NAME = "Physiker Puzzle";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -413,7 +421,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7;
+				MARKETING_VERSION = 0.7.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.volker-schering.physiker-katzen";
 				PRODUCT_NAME = "Physiker Puzzle";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -1,5 +1,7 @@
 #  Changelog
 
+Version 0.7.1
+[x] fix: Reset gameinfo.level unnecessary
 Version 0.7
 [x] Umbau Logging
 [x] new: Sharebutton in AboutScreen

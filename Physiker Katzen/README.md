@@ -1,14 +1,17 @@
-#  Physiker Katzen
+#  Physiker Puzzle
 
 Drei Katzen mit Namen großer Physiker:innen
+
    - Albert Einstein
    - Erwin Schrödinger
    - Marie Curie
+   
 als Schiebepuzzle.
 
 ## Über
 
-Entstanden ist dieser Running Gag beim Spielen eines Krimi Dinners bei Freunden.
+Entstanden ist dieses Spiel als Erinnerung an einen Running Gag beim Spielen 
+eines Krimi Dinners bei Freunden.
 Ich spielte eine Nobelpreisträgering mit drei Katzen und von diesen sollte ich 
 den anderen Mitspielern immer wieder erzählen. Dafür hatte ich eine Collage von 
 drei zufällig aus dem Netz geladenen Katzenbildern auf dem Handy erstellt.

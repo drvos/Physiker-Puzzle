@@ -48,6 +48,17 @@
                                     <constraint firstAttribute="height" constant="103" id="HkG-9x-w6T"/>
                                 </constraints>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NCB-pC-f0x">
+                                <rect key="frame" x="0.0" y="798" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="yvZ-vR-pRr">
+                                        <connections>
+                                            <action selector="shareWinTapped:" destination="9sL-OL-Xgd" id="xAt-gR-hSj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PCn-2V-VWr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

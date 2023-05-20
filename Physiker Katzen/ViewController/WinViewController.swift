@@ -32,7 +32,7 @@ class WinViewController: UIViewController {
    @IBAction func shareWinTapped(_ sender: UIBarButtonItem) {
       let timeText = String(format: "Hurray! Puzzle gelöst in %@.", gameinfo.secondsFormatted())
       let levelText = String(format: "Schwierigkeit: %@", gameinfo.levelFormatted())
-      let movesText = String(format: "Beenötigte Spielzüge: %d", gameinfo.moves)
+      let movesText = String(format: "Benötigte Spielzüge: %d", gameinfo.moves)
       let img = UIImage(named: "PuzzlePicture")
       let share = [timeText, levelText, movesText, img!] as [Any]
       app.openShareSheet(sender: self, share: share)

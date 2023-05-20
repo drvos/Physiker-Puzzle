@@ -95,6 +95,8 @@
 		9CF49F072A0F73E900B9627E = {
 			isa = PBXGroup;
 			children = (
+				9CFA8E4E2A18D3220040BCC4 /* README.md */,
+				9CFA8E4F2A18D3220040BCC4 /* CHANGELOG.md */,
 				9CF49F122A0F73E900B9627E /* Physiker Katzen */,
 				9CF49F112A0F73E900B9627E /* Products */,
 			);
@@ -122,8 +124,6 @@
 				9CF49F192A0F73E900B9627E /* Main.storyboard */,
 				9CF49F1E2A0F73EB00B9627E /* LaunchScreen.storyboard */,
 				9CF49F1C2A0F73EB00B9627E /* Assets.xcassets */,
-				9CFA8E4E2A18D3220040BCC4 /* README.md */,
-				9CFA8E4F2A18D3220040BCC4 /* CHANGELOG.md */,
 				9CF49F212A0F73EB00B9627E /* Info.plist */,
 			);
 			path = "Physiker Katzen";

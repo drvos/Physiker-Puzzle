@@ -59,7 +59,6 @@ class Gameinfo {
    }
    
    func reset() {
-      self.level = 0
       self.moves = 0
       self.seconds = 0
       delegate?.gameinfoReset()

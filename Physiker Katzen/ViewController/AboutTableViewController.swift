@@ -30,7 +30,10 @@ class AboutTableViewController: UITableViewController {
    }
    @IBAction func shareButtonTapped(_ sender: UIButton) {
       logger.debug("Function shareButtonTapped")
-      app.openShareSheet(sender: self)
+      let text = String(format: "Hallo! Hier ist ein Link zum Herunterladen der %@ App", app.Name)
+      let url = NSURL(string: app.AppStoreUrl)
+      let share = [text, url!] as [Any]
+      app.openShareSheet(sender: self, share: share)
    }
    
 }

@@ -39,11 +39,8 @@ class App {
    
    static let shared: App = { return App() }()
    
-   func openShareSheet(sender: UIViewController) {
+   func openShareSheet(sender: UIViewController, share: [Any]) {
       logger.debug("Function app.shareSheet")
-      let text = String(format: "Hallo! Hier ist ein Link zum Herunterladen der %@ App", self.Name)
-      let url = NSURL(string: self.AppStoreUrl)
-      let share = [text, url!] as [Any]
       let vc = UIActivityViewController(activityItems: share, applicationActivities: [])
       sender.present(vc, animated: true)
    }

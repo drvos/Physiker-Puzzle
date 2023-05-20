@@ -12,6 +12,7 @@ class WinViewController: UIViewController {
    @IBOutlet weak var winImageView: UIImageView!
    @IBOutlet weak var winCrownImageView: UIImageView!
    
+   let app = App.shared
    let gameinfo = Gameinfo.shared
    
    override func viewDidLoad() {
@@ -25,4 +26,16 @@ class WinViewController: UIViewController {
       logger.trace("WinViewController::WinViewWillDisappear")
       gameinfo.reset()
    }
+   
+   // MARK: - IB Action
+   
+   @IBAction func shareWinTapped(_ sender: UIBarButtonItem) {
+      let timeText = String(format: "Hurray! Puzzle gelöst in %@.", gameinfo.secondsFormatted())
+      let levelText = String(format: "Schwierigkeit: %@", gameinfo.levelFormatted())
+      let movesText = String(format: "Beenötigte Spielzüge: %d", gameinfo.moves)
+      let img = UIImage(named: "PuzzlePicture")
+      let share = [timeText, levelText, movesText, img!] as [Any]
+      app.openShareSheet(sender: self, share: share)
+   }
+   
 }

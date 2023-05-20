@@ -29,6 +29,7 @@
 		9CF5A8292A14004B0091DC23 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF5A8282A14004B0091DC23 /* AboutViewController.swift */; };
 		9CFA8E502A18D3230040BCC4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E4E2A18D3220040BCC4 /* README.md */; };
 		9CFA8E512A18D3230040BCC4 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E4F2A18D3220040BCC4 /* CHANGELOG.md */; };
+		9CFA8E532A1924FB0040BCC4 /* Screenshots in Resources */ = {isa = PBXBuildFile; fileRef = 9CFA8E522A1924FB0040BCC4 /* Screenshots */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		9CF5A8282A14004B0091DC23 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		9CFA8E4E2A18D3220040BCC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9CFA8E4F2A18D3220040BCC4 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		9CFA8E522A1924FB0040BCC4 /* Screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Screenshots; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		9CF49F072A0F73E900B9627E = {
 			isa = PBXGroup;
 			children = (
+				9CFA8E522A1924FB0040BCC4 /* Screenshots */,
 				9CFA8E4E2A18D3220040BCC4 /* README.md */,
 				9CFA8E4F2A18D3220040BCC4 /* CHANGELOG.md */,
 				9CF49F122A0F73E900B9627E /* Physiker Katzen */,
@@ -201,6 +204,7 @@
 				9CFA8E512A18D3230040BCC4 /* CHANGELOG.md in Resources */,
 				9CF49F1D2A0F73EB00B9627E /* Assets.xcassets in Resources */,
 				9CFA8E502A18D3230040BCC4 /* README.md in Resources */,
+				9CFA8E532A1924FB0040BCC4 /* Screenshots in Resources */,
 				9CF49F1B2A0F73E900B9627E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

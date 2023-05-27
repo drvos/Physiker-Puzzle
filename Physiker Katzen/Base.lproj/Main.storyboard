@@ -684,19 +684,16 @@ Marie Curie</string>
                             <tableViewSection id="CWj-ID-XXz">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hAR-er-iYg">
-                                        <rect key="frame" x="0.0" y="171.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="171.5" width="414" height="40.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hAR-er-iYg" id="jKR-4i-LSu">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="40.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuq-Ve-r02">
-                                                    <rect key="frame" x="20" y="5" width="394" height="33.5"/>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuq-Ve-r02">
+                                                    <rect key="frame" x="20" y="5" width="394" height="30.5"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" title="Im Appstore bewerten">
-                                                        <color key="titleColor" systemColor="labelColor"/>
-                                                    </state>
+                                                    <state key="normal" title="Im Appstore bewerten"/>
                                                     <connections>
                                                         <action selector="appStoreRatingTapped:" destination="dvo-7q-1Qu" eventType="touchUpInside" id="oJA-g2-h5d"/>
                                                     </connections>
@@ -711,19 +708,16 @@ Marie Curie</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Oib-u3-vnc">
-                                        <rect key="frame" x="0.0" y="215" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="212" width="414" height="40.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oib-u3-vnc" id="AiS-q7-1cv">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="40.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUH-dc-p5g">
-                                                    <rect key="frame" x="20" y="5" width="394" height="33.5"/>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUH-dc-p5g">
+                                                    <rect key="frame" x="20" y="5" width="394" height="30.5"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" title="Mit Freunden teilen">
-                                                        <color key="titleColor" systemColor="labelColor"/>
-                                                    </state>
+                                                    <state key="normal" title="Mit Freunden teilen"/>
                                                     <connections>
                                                         <action selector="shareButtonTapped:" destination="dvo-7q-1Qu" eventType="touchUpInside" id="cNA-FN-RTO"/>
                                                     </connections>

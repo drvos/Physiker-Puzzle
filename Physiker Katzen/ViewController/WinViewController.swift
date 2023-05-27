@@ -29,7 +29,11 @@ class WinViewController: UIViewController {
    
    // MARK: - IB Action
    
-   @IBAction func shareWinTapped(_ sender: UIBarButtonItem) {
+   @IBAction func winCloseTapped(_ sender: UIBarButtonItem) {
+      self.dismiss(animated: true)
+   }
+   
+   @IBAction func winShareTapped(_ sender: UIBarButtonItem) {
       let timeText = String(format: "Hurray! Puzzle gelöst in %@.", gameinfo.secondsFormatted())
       let levelText = String(format: "Schwierigkeit: %@", gameinfo.levelFormatted())
       let movesText = String(format: "Benötigte Spielzüge: %d", gameinfo.moves)

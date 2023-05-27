@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ze-jR-MFu">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                                <rect key="frame" x="0.0" y="54" width="414" height="832"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7n-I3-5oI">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
@@ -109,11 +109,31 @@
                                     <constraint firstAttribute="trailing" secondItem="C7n-I3-5oI" secondAttribute="trailing" id="ZEO-cf-1Xw"/>
                                     <constraint firstItem="C7n-I3-5oI" firstAttribute="top" secondItem="9ze-jR-MFu" secondAttribute="top" id="hyi-Tl-hmn"/>
                                     <constraint firstItem="C7n-I3-5oI" firstAttribute="leading" secondItem="9ze-jR-MFu" secondAttribute="leading" id="mGz-Mg-AET"/>
-                                    <constraint firstAttribute="bottom" secondItem="C7n-I3-5oI" secondAttribute="bottom" id="z08-r6-FwF"/>
+                                    <constraint firstAttribute="bottom" secondItem="C7n-I3-5oI" secondAttribute="bottom" constant="-168" id="z08-r6-FwF"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="6sW-7R-iL6"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Igq-Mi-ntx"/>
                             </scrollView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uvQ-Q2-riC">
+                                <rect key="frame" x="0.0" y="-2" width="414" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem style="editor" id="P8V-pw-OCU">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.down" catalog="system" id="sJr-qC-6pG">
+                                            <connections>
+                                                <action selector="winCloseTapped:" destination="9sL-OL-Xgd" id="WX8-xy-rFR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="wtX-Jg-TZP">
+                                            <connections>
+                                                <action selector="winShareTapped:" destination="9sL-OL-Xgd" id="1AZ-Wc-ipf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <navigationBarAppearance key="standardAppearance" backgroundEffect="regular"/>
+                                <navigationBarAppearance key="compactAppearance"/>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PCn-2V-VWr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -121,7 +141,7 @@
                             <constraint firstItem="9ze-jR-MFu" firstAttribute="trailing" secondItem="PCn-2V-VWr" secondAttribute="trailing" id="5Je-2b-vpz"/>
                             <constraint firstItem="9ze-jR-MFu" firstAttribute="bottom" secondItem="PCn-2V-VWr" secondAttribute="bottom" id="LHl-sH-SaM"/>
                             <constraint firstItem="9ze-jR-MFu" firstAttribute="leading" secondItem="PCn-2V-VWr" secondAttribute="leading" id="pkO-Us-TLD"/>
-                            <constraint firstItem="9ze-jR-MFu" firstAttribute="top" secondItem="PCn-2V-VWr" secondAttribute="top" id="vLU-eN-b0z"/>
+                            <constraint firstItem="9ze-jR-MFu" firstAttribute="top" secondItem="PCn-2V-VWr" secondAttribute="top" constant="54" id="vLU-eN-b0z"/>
                         </constraints>
                     </view>
                     <connections>
